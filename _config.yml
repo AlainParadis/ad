@@ -1,0 +1,27 @@
+port: 4005
+title: The New AlgonquinDesign.ca
+email: paradia@algonquincollege.ca
+description: 
+baseurl: ""
+url: ""
+twitter_username: "@algonquindesign"
+github_username:  "@algonquindesign"
+
+plugins:
+  - jekyll-feed
+
+github:
+  is_project_page: false
+  github_meta: false
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

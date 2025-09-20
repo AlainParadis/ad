@@ -1,0 +1,151 @@
+title: "Graduate Showcases"
+desc: "Our grads host a yearly public exhibition to share their work with family, friends & industry professionals."
+
+shows:
+  - title: "Kaleido"
+    start_time: "2025-04-10T17:00"
+    end_time: "2025-04-10T21:00"
+    bgcolor: "#fff"
+    addr:
+      name: "Horticulture Building"
+      street_address: "1525 Princess Patricia Way"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1S 5J3"
+      tel: "+1-613-580-2429"
+    desc: |
+      We are Kaleido —  Algonquin’s Graphic Design graduating class of 2025 proudly presents Kaleido—a celebration of transformation, perspective, and endless creativity. Like a kaleidoscope, our designs shift, evolve, and reflect the ever-changing world.
+
+  - title: "Zenith"
+    start_time: "2024-04-11T17:00"
+    end_time: "2024-04-11T21:00"
+    bgcolor: "#fff"
+    addr:
+      name: "Bayview Yards"
+      street_address: "7 Bayview Station Rd"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1Y 2C5"
+      tel: "+1-613-216-4229"
+    desc: |
+      Our students reach their zenith, the highest point of their artistic journey, as they showcase their exceptional portfolios to industry professionals and art enthusiasts alike. Join us at Zenith and witness the future stars of graphic design shine bright!
+
+  - title: "Resolve"
+    start_time: "2023-04-13T17:00"
+    end_time: "2023-04-13T21:00"
+    bgcolor: "#fff"
+    addr:
+      name: "Bayview Yards"
+      street_address: "7 Bayview Station Rd"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1Y 2C5"
+      tel: "+1-613-216-4229"
+
+  - title: "Collation"
+    start_time: "2022-04-21T19:00"
+    end_time: "2022-04-21T20:00"
+    bgcolor: "#fff"
+    # intro: "YouTube — Live Stream"
+    desc: |
+      We are Collation — Algonquin's freshest batch of Graphic Designers. We each bring something different to the table, whether it be animation, illustration, coding or a really good grid. Our collaboration is key. Check us out!
+
+  - title: "Gen. A"
+    start_time: "2021-04-23T19:00"
+    end_time: "2020-04-23T20:00"
+    bgcolor: "#fff"
+    # intro: "YouTube — Live Stream"
+    # desc: |
+    #   We know — we’re sad too that we can’t meet in person, but we’ve got some cool new ideas!
+
+  - title: "Anthology"
+    start_time: "2020-04-09T17:00"
+    end_time: "2020-04-09T21:00"
+    bgcolor: "#fff"
+    addr:
+      name: "Horticulture Building"
+      street_address: "1525 Princess Patricia Way"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1S 5J3"
+      tel: "+1-613-580-2429"
+
+  - title: "Pathfinder"
+    start_time: "2019-04-24T17:00"
+    end_time: "2019-04-24T21:00"
+    bgcolor: "#6f156c"
+    addr:
+      name: "Horticulture Building"
+      street_address: "1525 Princess Patricia Way"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1S 5J3"
+      tel: "+1-613-580-2429"
+
+  - title: "Reboot"
+    start_time: "2018-04-25T17:00"
+    end_time: "2018-04-25T21:00"
+    bgcolor: "#fff"
+    addr:
+      name: "Horticulture Building"
+      street_address: "1525 Princess Patricia Way"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1S 5J3"
+      tel: "+1-613-580-2429"
+
+  - title: "Studio N"
+    start_time: "2017-05-09T17:00"
+    addr:
+      name: "Horticulture Building"
+      street_address: "1525 Princess Patricia Way"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1S 5J3"
+      tel: "+1-613-580-2429"
+
+  - title: "Framework"
+    start_time: "2016-04-29T17:00"
+    addr:
+      name: "Horticulture Building"
+      street_address: "1525 Princess Patricia Way"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1S 5J3"
+      tel: "+1-613-580-2429"
+
+  - title: "Multiply"
+    start_time: "2015-03-13T18:30"
+    addr:
+      name: "Student Commons (E Building), Algonquin College"
+      street_address: "1385 Woodroffe Ave."
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K2G 1V8"
+
+  - title: "Level 14"
+    start_time: "2014-05-02T18:00"
+    addr:
+      name: "Shopify Inc."
+      street_address: "126 York Street, Suite 200"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1N 5T5"
+
+  - title: "Grad Show"
+    start_time: "2013-05-03T19:00"
+    addr:
+      name: "Shopify Inc."
+      street_address: "126 York Street, Suite 200"
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1N 5T5"
+
+  - title: "DGS"
+    start_time: "2012-05-04T18:30"
+    addr:
+      name: "Orange Gallery"
+      street_address: "233 Armstrong St."
+      city: "Ottawa"
+      province: "ON"
+      postal_code: "K1R 7R7"

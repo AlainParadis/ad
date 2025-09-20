@@ -1,0 +1,60 @@
+<footer>
+    {% unless page.url contains 'news' %}
+	<div class="center">
+		<h2>
+			Hire a Graphic Design Student 
+		</h2>
+		<p>
+			Interested in hiring one of our talented students? You’ll get loads of creativity, innovative solutions—and affordable rates. 
+		</p>
+		<a href="/jobs/" class="btn btn-orange">Hire a Designer</a>
+	</div>
+    {% endunless %}
+	<nav role="navigation">
+		<h2>
+			Sitemap 
+		</h2>
+		<ul>
+			<li><a href="/#testimonials">{{site.data.testimonials.testimonials_title}}</a></li>
+			<li><a href="/#design-for-you">{{site.data.stats.foryou.title | replace: ':', ''}}</a></li>
+			<li><a href="/#career-opportunities">{{site.data.stats.career.title}}</a></li>
+			<li><a href="/#program-highlights">{{site.data.stats.highlights.title}}</a></li>
+			<li><a href="/#news">{{site.data.news.section_title}}</a></li>
+			<li><a href="/#hear-from-grads">{{site.data.video.title}}</a></li>
+			<li><a href="/#student-work-samples">{{site.data.sample-work.title}}</a></li>
+			<li><a href="/#curriculum">{{site.data.curriculum.title}}</a></li>
+			<li><a href="/#faculty">{{site.data.faculty.title}}</a></li>
+			<li><a href="/#grad-shows">{{site.data.grads.title}}</a></li>
+			<li><a href="/portfolio-requirements">{{site.data.portfolio.title}}</a></li>
+			<li><a href="/#apply-now">{{site.data.interested.title}}</a></li>
+		</ul>
+	</nav>
+	<h2>
+		{{site.data.footer.social_title}} 
+	</h2>
+	<ul class="footer-links social">
+		{% for link in site.data.footer.social %} 
+		<li><img alt="" class="social-icon" src="{{ site.baseurl }}/svg/{{ link.icon }}.svg"><a href="{{link.url}}" rel="external">{{link.title}}</a></li>
+		{% endfor %} 
+	</ul>
+	<h2>
+		{{site.data.footer.resources_title}} 
+	</h2>
+	<ul class="footer-links">
+		{% for link in site.data.footer.resources %} 
+		<li> <a href="{{link.url}}" rel="external">{{{link.title}}</a></li>
+		{% endfor %} 
+	</ul>
+	<div class="footer-copyright">
+		<div>
+			<img alt="Algonquin College" class="logo-algonquin" src="{{ site.baseurl }}/svg/algonquin.svg">
+		</div>
+		<div>
+			© {{site.time | date: '%Y'}} Graphic Design, <span itemprop="name">Algonquin College</span> 
+			<address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="streetAddress">1385 Woodroffe Ave.</span>, <span itemprop="addressLocality">Ottawa</span>, <span itemprop="addressRegion">ON</span>, <span itemprop="addressCountry">CA</span>, <span itemprop="postalCode">K2G 1V8</span></address>
+		</div>
+		<div>
+			<a href="https://www.algonquincollege.com/" rel="external" title="Algonquin College" aria-label="Algonquin College">Algonquin College</a>&nbsp;·&nbsp;<a href="/fieldwork/">Fieldwork</a>&nbsp;·&nbsp;<a href="https://www.algonquincollege.com/directives/privacy/">Privacy <abbr title="and">&amp;</abbr> Cookies</a> 
+		</div>
+	</div>
+</footer>

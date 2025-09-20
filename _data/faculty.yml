@@ -1,0 +1,62 @@
+title: "Our Faculty"
+desc: "We are passionate design professionals, dedicated to imparting an industry-relevant, current & varied curriculum to eager budding&nbsp;designers."
+outro: "Many more amazing practicing designers from the Ottawa community contribute their time, knowledge & expertise to help our students."
+
+people:
+  - name: "David Bromley"
+    img: "david.jpg"
+    desc: "Theory & branding"
+    role: "Coordinator & Professor"
+    accreditation: "A.R.G.D."
+    phone: "+1 613-727-4723,####"
+    links:
+      - title: "Email"
+        url: "mailto:bromled@algonquincollege.com"
+      - title: "Website"
+        url: "https://davidbromley.design"
+
+  - name: "Alain Paradis"
+    img: "alain.jpg"
+    desc: "Layout & Business"
+    accreditation: "M.A., R.G.D"
+    role: "Coordinator & Professor"
+    phone: "+1 613-727-4723,####"
+    links:
+      - title: "Email"
+        url: "mailto:paradia@algonquincollege.com"
+      - title: "LinkedIn"
+        url: "https://www.linkedin.com/in/designschool/"
+
+  - name: "Andrea Emery"
+    img: "andrea.jpg"
+    desc: "Typography & sketching"
+    accreditation: "R.G.D."
+    role: "Professor"
+    phone: "+1 613-727-4723,####"
+    links:
+      - title: "Email"
+        url: "mailto:emerya@algonquincollege.com"
+      - title: "LinkedIn"
+        url: "https://www.linkedin.com/in/andrea-lesia-emery-rgd-97235a22/"
+
+  - name: "Wendy Warren"
+    img: "wendy.jpg"
+    desc: "Code & problem solving"
+    accreditation: ""
+    role: "Professor"
+    phone: "+1 613-727-4723,####"
+    links:
+      - title: "Email"
+        url: "mailto:warrenw@algonquincollege.com"
+      - title: "GitHub"
+        url: "https://github.com/wendywarren"
+
+  - name: "Angie Fahlman"
+    img: "angie.jpg"
+    desc: "User Experience Design"
+    accreditation: "M.A., R.G.D."
+    role: "Professor"
+    phone: "+1 613-727-4723,####"
+    links:
+      - title: "Email"
+        url: "mailto:fahlmaa@algonquincollege.com"

@@ -1,0 +1,45 @@
+<section class="stats">
+	<div class="stats-grid">
+		<div class="stat-block checklist">
+			<h2>
+				{{site.data.stats.foryou.title}} 
+			</h2>
+			<ul>
+				{% for item in site.data.stats.foryou.items %} 
+				<li>{{item}}</li>
+				{% endfor %} 
+			</ul>
+		</div>
+		<div class="stat-block opportunities">
+			<h2>
+				{{site.data.stats.career.title}} 
+			</h2>
+			<ul>
+				{% for item in site.data.stats.career.items %} 
+				<li>{{item}}</li>
+				{% endfor %} 
+			</ul>
+		</div>
+		<div class="stat-block checklist">
+			<h2>
+				{{site.data.stats.highlights.title}} 
+			</h2>
+			<ul>
+				{% for item in site.data.stats.highlights.items %} 
+				<li>{{item}}</li>
+				{% endfor %} 
+			</ul>
+		</div>
+	</div>
+	<div class="satisfaction">
+		<h2>
+			98% Student Satisfaction Rate 
+		</h2>
+		<p>
+			In 2019, when Graphic Design Program students were asked, “Is your program is giving you knowledge and skills that will be useful in your future career?” — 98% agreed. 
+		</p>
+		<p class="italic">
+			—KPI Student Satisfaction Capstone Question 
+		</p>
+	</div>
+</section>

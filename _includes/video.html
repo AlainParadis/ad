@@ -1,0 +1,24 @@
+<section class="pad-b-1-2 text-center bg-orange bg-orange-texture">
+  <div class="embed embed-slant push" aria-hidden="true" role="presentation">
+    <svg class="embed-item" width="1600" height="80" viewBox="0 0 1600 80">
+      <rect fill="#fff" width="1629.8" height="187.41" x="-16.1" y="-146.8" transform="rotate(2 797.48 -51.983)"/>
+    </svg>
+  </div>
+  <header class="gutter-1-2 push-2">
+    <h2 class="yotta"><span tabindex="0" id="hear-from-grads">{{site.data.video.title}}</span></h2>
+    <p class="mega max-length push-0">{{site.data.video.desc | replace: '& ', '<abbr title="and">&amp;</abbr> '}}</p>
+  </header>
+  <div class="max-length push">
+    <div class="video-wrap embed embed-16by9">
+      <a class="video-link embed-item link-box" href="https://{% if site.data.video.video.service == 'vimeo' %}vimeo.com{% else %}youtu.be{% endif %}/{{site.data.video.video.id}}" data-video-id="{{site.data.video.video.id}}" data-video-service="{{site.data.video.video.service}}" rel="external" title="{{site.data.video.video.link}}" aria-label="{{site.data.video.video.link}}">
+        <img class="img-flex" src="{{site.baseurl}}/images/{{site.data.video.video.poster}}" alt="{{site.data.video.video.link}}">
+      </a>
+    </div>
+  </div>
+  <blockquote class="push-2">
+    <div class="video-quote mega pad-t gutter-2 max-length">
+      <p class="italic push-1-2">{{site.data.video.testimonial}}</p>
+      <footer class="kilo"><span aria-hidden="true" role="presentation">—</span><cite>{{site.data.video.testimonial_author}}</cite></footer>
+    </div>
+  </blockquote>
+</section>
