@@ -33,24 +33,18 @@ body
 {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 1rem;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	text-align: center;
 	background-color: var(--dark-green);
 	color: var(--white);
 	padding: 1rem 2rem;
 	box-sizing: border-box;
 }
 
-.masthead > div
-{
-	flex: 1 1 auto;
-	min-width: 200px;
-}
-
-.masthead > div:first-child span { }
-.masthead > div:last-child { }
+.masthead > div { margin: 0 auto; }
 
 .banner
 {
@@ -87,33 +81,28 @@ body
 	border: solid 2px lightgrey;
 	border-radius: 10px;
 	padding: 0.75rem;
-	hyphens: none;
 }
 
-.stats
+.post
 {
-	display: grid;
-	background-color: #fff;
-	max-width: 100vw;
+	max-width: 60vw;
+	margin: 0 auto;
 }
 
 .stats-grid
 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	justify-self: center;
-	align-self: start;
-	gap: 1.5rem;
-	max-width: 90vw;
+	grid-template-columns: 1fr;
+	max-width: 60ch;
 	padding-top: 1rem;
-	margin-bottom: 2rem;
+	margin: 2rem 1rem;
 }
 
 .stats > .satisfaction
 {
 	margin: 1rem auto;
 	text-align: left;
-	max-width: 70vw;
+	max-width: 90vw;
 }
 
 .grads
@@ -133,52 +122,61 @@ body
 
 .grads article
 {
-    width: 60vw;
+	width: 300px;
 	padding: 1rem;
 	background-color: white;
 	border-radius: 10px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.grads article img { width: 250px; }
-
-.grads article div:nth-of-type(1) {
-  flex: 1 1 33.33%;
-  box-sizing: border-box;
-  padding: 10px;
-  min-width: 250px;
+.grads article div:nth-of-type(1)
+{
+	flex: 1 1 33.33%;
+	box-sizing: border-box;
+	min-width: 250px;
 }
 
-.grads article div:nth-of-type(2) {
-  flex: 2 1 66.67%;
-  box-sizing: border-box;
-  padding: 10px;
-  min-width: 200px;
+.grads article img
+{
+	max-width: 250px;
+	margin: 0;
 }
 
-.grads article div:nth-of-type(1) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.grads article div:nth-of-type(2)
+{
+	flex: 2 1 66.67%;
+	box-sizing: border-box;
+	padding: 10px;
+	min-width: 200px;
+}
+
+.grads article div:nth-of-type(1)
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .grads ol
 {
+	max-width: 60vw;
 	list-style: none;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: 1fr;
+	justify-items: center;
 	gap: 1rem;
+	margin: 0 auto;
 }
 
 .grads ol li
 {
 	align-self: start;
 	background-color: white;
-    aspect-ratio: 1 / 1;
+	aspect-ratio: 1 / 1;
 	padding: 1rem;
 	hyphens: none;
 	color: black;
@@ -205,39 +203,35 @@ body
 	padding: 2rem 2rem;
 }
 
-.sample-work-grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  width: 100vw;
-}
-
-.grid-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-.curriculum
+.sample-work-grid-container
 {
-	max-width: 90vw;
-	margin: 0 auto;
-	background-color: #fff;
-	padding: 2rem 2rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0;
+	width: 100vw;
+}
+
+.grid-item img
+{
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .curriculum div
 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+	grid-template-columns: 1fr;
 	margin: 0 auto;
 	gap: 1rem;
 }
 
 .faculty
 {
-	max-width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	gap: 1rem;
 	margin: 0 auto;
 	background-color: #ebebeb;
 	padding: 2rem 2rem;
@@ -247,7 +241,11 @@ body
 	background-size: auto;
 }
 
-.faculty .person li { border-radius: 20px; }
+.faculty .person li
+{
+	border-radius: 20px;
+	padding-bottom: 0.5rem;
+}
 
 .faculty .person li img
 {
@@ -263,7 +261,7 @@ body
 {
 	background-color: #fff;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: 1fr;
 	gap: 1rem;
 	max-width: 100vw;
 	margin: 0 auto;
@@ -271,13 +269,7 @@ body
 	color: #000;
 }
 
-.rgd div:first-child
-{
-	grid-column: span 1;
-	justify-self: end;
-}
-
-.rgd div:last-child { grid-column: span 3; }
+.rgd div:first-child { justify-self: start; }
 
 .rgd div svg
 {
@@ -312,24 +304,6 @@ body
 	color: #000;
 }
 
-nav ul
-{
-	display: grid;
-    grid-template-columns: repeat(2, max-content);
-	gap: 0rem 6rem;
-	justify-self: start;
-	align-self: start;
-	align-content: start;
-	max-width: 100vw;
-	margin: 0 auto;
-}
-
-nav ul li
-{
-	padding: 0;
-	margin: 0;
-}
-
 footer
 {
 	background-color: var(--dark-green);
@@ -350,15 +324,194 @@ footer
 
 .footer-copyright div { margin-top: 1rem; }
 
-nav
+nav ul, footer ul.social, footer ul.resources
 {
 	display: grid;
-	max-width: 100vw;
-	border-top: 2px solid var(--lime-green);
+	grid-template-columns: 1fr 1fr;
+	list-style-type: none;
+	padding: 1rem 0;
+	margin: 0;
+	gap: .5rem;
+	border-top: solid 2px var(--lime-green);
 }
 
-.post
+nav ul li
 {
-	max-width: 60vw;
-	margin: 0 auto;
+	padding: 0;
+	margin: 0;
+}
+
+footer ul.resources { border-bottom: solid 2px var(--lime-green); }
+
+@media (min-width: 600px)
+{
+	.grads ol
+	{
+		max-width: 80vw;
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.curriculum div
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 80vw: margin: 0 auto;
+		gap: 1rem;
+	}
+	
+	.faculty ul.person
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.rgd
+	{
+		background-color: #fff;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	
+	.rgd div:first-child { justify-self: end; }
+	
+	.rgd div svg
+	{
+		width: 90%;
+		height: auto;
+	}
+	
+	nav ul
+	{
+		display: grid;
+		grid-template-columns: repeat(3, max-content);
+	}
+	
+	nav ul, footer ul.social, footer ul.resources
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
+}
+
+@media (min-width: 900px)
+{
+	/* Large desktop and up */
+	.masthead
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 1rem;
+		background-color: var(--dark-green);
+		color: var(--white);
+		padding: 1rem 2rem;
+		box-sizing: border-box;
+	}
+	
+	.masthead > div
+	{
+		flex: 0 1 auto;
+		min-width: 200px;
+	}
+	
+	.stats
+	{
+		display: grid;
+		background-color: #fff;
+		max-width: 100vw;
+	}
+	
+	.stats-grid
+	{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		justify-self: center;
+		gap: 2rem;
+		max-width: 90vw;
+		padding-top: 1rem;
+		margin-bottom: 2rem;
+	}
+	
+	.stats > .satisfaction
+	{
+		margin: 1rem auto;
+		text-align: left;
+		max-width: 70vw;
+	}
+	
+	.grads ol
+	{
+		max-width: 80vw;
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
+		margin: 0 auto;
+	}
+	
+	.curriculum
+	{
+		max-width: 90vw;
+		margin: 0 auto;
+		background-color: #fff;
+		padding: 2rem 2rem;
+	}
+	
+	.curriculum div
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin: 0 auto;
+		gap: 1rem;
+	}
+	
+	.faculty ul.person
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.rgd
+	{
+		background-color: #fff;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1rem;
+		max-width: 100vw;
+		margin: 0 auto;
+		padding: 2rem;
+		color: #000;
+	}
+	
+	.rgd div:first-child
+	{
+		grid-column: span 1;
+		justify-self: end;
+	}
+	
+	.rgd div:last-child { grid-column: span 3; }
+	
+	.rgd div svg
+	{
+		width: 75%;
+		height: auto;
+	}
+	
+	nav ul
+	{
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		gap: .5rem;
+	}
+	
+	footer ul.social, footer ul.resources
+	{
+		display: grid;
+		grid-template-columns: repeat(5, auto);
+		justify-content: space-between;
+	}
 }

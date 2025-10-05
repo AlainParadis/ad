@@ -189,6 +189,7 @@ strong, bold, .bold
 
 .news p { font-size: .85rem; }
 .news a:hover { border-bottom: solid 2px lightgrey; }
+.news-item { hyphens: none; }
 
 .stat-block h2, .satisfaction h2
 {
@@ -534,29 +535,6 @@ footer a
 }
 
 footer a:hover { border-bottom: solid 2px white; }
-
-footer ul.footer-links
-{
-	display: flex;
-	justify-content: space-between;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	gap: 1.5rem;
-	border-top: solid 2px var(--lime-green);
-}
-
-footer ul.footer-links:last-of-type
-{
-	border-bottom: solid 2px var(--lime-green);
-	padding-bottom: 1rem;
-}
-
-ul.footer-links li
-{
-	display: inline;
-	margin-top: 1rem;
-}
 
 .social-icon
 {
