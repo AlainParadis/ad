@@ -478,10 +478,10 @@ strong, bold, .bold
 
 .rgd a:hover { border-bottom: 2px solid lightgrey; }
 
-a.svg
+a svg
 {
 	text-decoration: none;
-	border-bottom: 0;
+	border-bottom: none !important;
 }
 
 .portfolio-reqs h2 { font-size: clamp(1.5rem, 4vw, 3rem); }
@@ -593,12 +593,14 @@ a.btn-lime-green
 {
 	background-color: var(--lime-green);
 	color: white;
+	border: 0;
 }
 
 a.btn-lime-green:hover
 {
 	background-color: var(--dark-green);
 	color: white;
+	border: 0;
 }
 
 a.btn-orange
@@ -611,6 +613,7 @@ a.btn-orange:hover
 {
 	background-color: var(--lime-green);
 	color: var(--dark-green);
+	border: 0;
 }
 
 a.btn-dark-green
