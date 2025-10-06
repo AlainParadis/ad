@@ -361,6 +361,7 @@ strong, bold, .bold
 	max-width: 50ch;
 	font-weight: 600;
 	color: #000;
+	hyphens: none;
 }
 
 .curriculum ul
