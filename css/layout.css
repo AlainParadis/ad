@@ -205,16 +205,16 @@ body
 .sample-work-grid-container
 {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, auto);
 	gap: 0.25rem;
-    margin: 1rem auto;
+	margin: 1rem auto;
 }
 
 .sample-work-grid-container img
 {
 	width: 100%;
-    aspect-ratio: 1/1;
+	aspect-ratio: 1/1;
 	object-fit: cover;
 	object-position: center;
 	display: block;
@@ -405,6 +405,13 @@ footer ul.resources { border-bottom: solid 2px var(--lime-green); }
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1rem;
 	}
+	
+	.sample-work-grid-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, auto);
+	}
 }
 
 @media (min-width: 900px)
@@ -462,6 +469,13 @@ footer ul.resources { border-bottom: solid 2px var(--lime-green); }
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1rem;
 		margin: 0 auto;
+	}
+	
+	.sample-work-grid-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, auto);
 	}
 	
 	.curriculum
