@@ -7,11 +7,9 @@
 	</p>
 	<div class="sample-work-grid-container">
     {% for image in site.data.sample-work.images %}
-      {% assign key = image[0] %}
-      {% assign image = image[1] %}
-        <a href="{{ image.url }}" target="_blank" class="grid-image" title="{{ image.title }} by {{ image.author }} ({{ image.year }})">
-            <img src="/images/sample-work/{{ image.src }}" alt="{{ image.title }}">
-        </a>
+      <a href="{{ image.url }}" target="_blank" class="grid-image" title="{{ image.title }} by {{ image.author }} ({{ image.year }})">
+        <img src="/images/sample-work/{{ image.src }}" alt="{{ image.title }}">
+      </a>
     {% endfor %}
     </div>
 	<p>

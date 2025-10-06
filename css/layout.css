@@ -200,15 +200,25 @@ body
 	background-size: auto;
 	display: flex;
 	flex-direction: column;
-	padding: 2rem 2rem;
 }
 
 .sample-work-grid-container
 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 0;
-	width: 100vw;
+	grid-template-rows: repeat(3, auto);
+	gap: 0.25rem;
+    margin: 1rem auto;
+}
+
+.sample-work-grid-container img
+{
+	width: 100%;
+    aspect-ratio: 1/1;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+	border: solid 1px black;
 }
 
 .grid-item img
@@ -216,6 +226,7 @@ body
 	width: 100%;
 	height: auto;
 	display: block;
+	border: solid 1px magenta;
 }
 
 .curriculum div
