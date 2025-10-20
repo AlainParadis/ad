@@ -54,7 +54,7 @@ body
 	background-size: auto;
 	display: flex;
 	flex-direction: column;
-	padding: 2rem 2rem;
+	padding: 0rem 1rem;
 }
 
 .news
@@ -96,13 +96,6 @@ body
 	max-width: 60ch;
 	padding-top: 1rem;
 	margin: 2rem 1rem;
-}
-
-.stats > .satisfaction
-{
-	margin: 1rem auto;
-	text-align: left;
-	max-width: 90vw;
 }
 
 .grads
@@ -416,7 +409,8 @@ footer ul.resources { border-bottom: solid 2px var(--lime-green); }
 
 @media (min-width: 900px)
 {
-	/* Large desktop and up */
+	.banner { padding-left: 3rem; }
+	
 	.masthead
 	{
 		width: 100%;
@@ -454,11 +448,11 @@ footer ul.resources { border-bottom: solid 2px var(--lime-green); }
 		margin-bottom: 2rem;
 	}
 	
-	.stats > .satisfaction
+	.satisfaction
 	{
 		margin: 1rem auto;
 		text-align: left;
-		max-width: 70vw;
+		max-width: 65vw;
 	}
 	
 	.grads ol
