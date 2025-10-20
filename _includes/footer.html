@@ -11,7 +11,7 @@
 	</div>
     {% endunless %}
 	<nav role="navigation">
-		<h2>
+		<h2 class="hidden">
 			Sitemap 
 		</h2>
 		<ul>
@@ -29,7 +29,7 @@
 			<li><a href="#interested">{{site.data.interested.title}}</a></li>
 		</ul>
 	</nav>
-	<h2>
+	<h2 class="hidden">
 		{{site.data.footer.social_title}} 
 	</h2>
 	<ul class="footer-links social">
@@ -37,7 +37,7 @@
 		<li><img alt="" class="social-icon" src="{{ site.baseurl }}/svg/{{ link.icon }}.svg"><a href="{{link.url}}" rel="external">{{link.title}}</a></li>
 		{% endfor %} 
 	</ul>
-	<h2>
+	<h2 class="hidden">
 		{{site.data.footer.resources_title}} 
 	</h2>
 	<ul class="footer-links resources">
