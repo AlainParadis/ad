@@ -162,7 +162,14 @@ strong, bold, .bold
 	color: white;
 	padding-bottom: 2px;
 	text-decoration: none;
+}
+
+.masthead-link {
 	border-bottom: 2px solid var(--lime-green);
+}
+
+a.masthead-link:hover {
+	border-bottom: 2px solid white;
 }
 
 .banner h1 { font-size: clamp(2rem, 6vw, 4rem); }
@@ -483,12 +490,8 @@ strong, bold, .bold
 	text-decoration: none;
 }
 
-.rgd-link{
-	border-bottom: 2px solid red;
-}
-
+.rgd-link { border-bottom: 2px solid red; }
 .rgd a:hover { border-bottom: 2px solid lightgrey; }
-
 .portfolio-reqs h2 { font-size: clamp(1.5rem, 4vw, 3rem); }
 
 .portfolio-reqs a
