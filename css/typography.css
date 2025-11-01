@@ -30,26 +30,34 @@ html
 p { margin-bottom: 2.0rem; }
 .sans { font-family: var(--sans); }
 
-.skip-link
-{
-	position: absolute;
-	left: -999px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.skip-link:focus
-{
-	position: static;
-	width: auto;
-	height: auto;
-	margin: 1em;
-	padding: 0.5em 1em;
-	background: #000;
-	color: #fff;
-	z-index: 1000;
+.skip-links > li::before {
+  content: none;
+}
+
+.skip-links a,
+.skip-links button {
+  padding: .5em .75em;
+  position: absolute;
+  top: -10em;
+  z-index: 10000; /* To make sure they're always on top */
+  background-color: #000;
+  border: 0;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-links a:focus,
+.skip-links button:focus {
+  outline-offset: 3px;
+  top: 0;
 }
 
 .hidden
