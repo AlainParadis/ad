@@ -481,16 +481,13 @@ strong, bold, .bold
 {
 	color: red;
 	text-decoration: none;
+}
+
+.rgd-link{
 	border-bottom: 2px solid red;
 }
 
 .rgd a:hover { border-bottom: 2px solid lightgrey; }
-
-a svg
-{
-	text-decoration: none;
-	border-bottom: none !important;
-}
 
 .portfolio-reqs h2 { font-size: clamp(1.5rem, 4vw, 3rem); }
 
