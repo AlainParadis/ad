@@ -336,7 +336,7 @@ nav ul, footer ul.social, footer ul.resources
 	padding: 1rem 0;
 	margin: 0;
 	gap: .5rem;
-	border-top: solid 2px var(--lime-green);
+	border-bottom: solid 2px var(--lime-green);
 }
 
 nav ul li
