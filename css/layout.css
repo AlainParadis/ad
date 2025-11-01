@@ -35,6 +35,8 @@ main
 	width: 100vw;
 }
 
+.jobs-main { max-width: 90vw; }
+
 .masthead
 {
 	width: 100%;
