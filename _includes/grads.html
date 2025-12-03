@@ -7,7 +7,7 @@
 	</p>
 	<article>
 		<div>
-			<img alt="{{site.data.grads.shows[0].title}}" src="{{site.baseurl}}/images/grad-shows/{{site.data.grads.shows[0].start_time | date: '%Y'}}.png"> 
+			<img alt="{{site.data.grads.shows[0].title}}" src="{{site.baseurl}}/images/grad-shows/{{site.data.grads.shows[0].start_time | date: '%Y'}}.png" loading="lazy"> 
 		</div>
 		<div>
 			<h3>
@@ -26,7 +26,7 @@
 	<div>
 		<ol>
 			{% for show in site.data.grads.shows offset:1 limit:4 %} 
-			<li> <a href="http://{{show.start_time | date: '%Y'}}.grads.algonquindesign.ca/"><img class="embed-item" src="{{site.baseurl}}/images/grad-shows/{{show.start_time | date: '%Y'}}.png" alt="Brand Graphic"> <span class="sans">{{show.title}} {{show.start_time | date: '%Y'}}</span> </a></li>
+			<li> <a href="http://{{show.start_time | date: '%Y'}}.grads.algonquindesign.ca/"><img class="embed-item" src="{{site.baseurl}}/images/grad-shows/{{show.start_time | date: '%Y'}}.png" alt="Brand Graphic" loading="lazy"> <span class="sans">{{show.title}} {{show.start_time | date: '%Y'}}</span> </a></li>
 			{% endfor %} 
 		</ol>
 	</div>

@@ -26,7 +26,7 @@ html
 	hyphenate-limit-zone: 8%;
 }
 
-.center .text-center, { text-align: center; }
+.center .text-center { text-align: center; }
 p { margin-bottom: 2.0rem; }
 .sans { font-family: var(--sans); }
 
@@ -123,7 +123,7 @@ h1 + p,
 	h3 + h4,
 	h4 + h5,
 	h5 + h6 { margin-top: 0.25rem; }
-p + P { margin-bottom: 1rem; }
+p + p { margin-bottom: 1rem; }
 ul + p { margin-top: 2rem; }
 
 hr
