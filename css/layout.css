@@ -36,6 +36,15 @@ main
 	overflow-x: hidden;
 }
 
+footer
+{
+	background-color: var(--dark-green);
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2rem;
+	color: #fff;
+}
+
 .jobs-main { max-width: 90vw; }
 
 .masthead
@@ -367,15 +376,6 @@ main
 	{
 		flex: 1 1 50%;
 		padding: 2rem;
-	}
-	
-	footer
-	{
-		background-color: var(--dark-green);
-		display: flex;
-		flex-direction: column;
-		padding: 2rem 2rem;
-		color: #fff;
 	}
 	
 	.footer-copyright
