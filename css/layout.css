@@ -427,7 +427,7 @@ footer
 
 	.banner-content
 	{
-		max-width: 80%;
+		max-width: 90vw;
 	}
 
 	.grads ol
@@ -498,7 +498,7 @@ footer
 
 	.banner-content
 	{
-		max-width: 70%;
+		max-width: 90vw;
 	}
 	
 	.masthead
@@ -640,7 +640,7 @@ footer
 	.employer,
 	.fieldwork-form
 	{
-		max-width: 80%;
+		max-width: 90vw;
 		padding: 2rem;
 	}
 }
@@ -652,6 +652,6 @@ footer
 	.employer,
 	.fieldwork-form
 	{
-		max-width: 70%;
+		max-width: 90vw;
 	}
 }
