@@ -15,9 +15,9 @@ layout: default
 	</h2>
 </section>
 <main role="main" class="jobs-main">
-	<h2>
+	<h3>
 		Hire a Designer 
-	</h2>
+	</h3>
 	<p>
 		Students in the Graphic Design program undergo rigorous training in their field. They may even specialize in specific disciplines, such as branding, web development, publication design, user interface design, and more. <em>What we wish for our students is for them to find fulfilling employment in the industry and hope they’ll occasionally provide their services at no cost for the public good.</em> 
 	</p>
@@ -26,9 +26,9 @@ layout: default
 			<img alt="" src="{{ site.baseurl }}/svg/ac-graphic-design.svg"> 
 		</div>
 		<div class="text-box">
-			<h2>
+			<h3>
 				Algonquin Design 
-			</h2>
+			</h3>
 			<p>
 				<em>Learn more about Algonquin College’s Graphic Design program.</em> 
 			</p>
@@ -38,9 +38,9 @@ layout: default
 			<a href="/">Read more ➜</a> 
 		</div>
 	</div>
-	<h2>
+	<h3>
 		Rates 
-	</h2>
+	</h3>
 	<p>
 		We’re confident you will find our students’ rates very affordable. In fact, they will be way below usual industry rates. What we want to avoid is having them work for no money, or too little money. <strong>If you’re looking for free graphic design services for a for-profit endeavour, please enquire elsewhere.</strong> 
 	</p>
@@ -49,9 +49,9 @@ layout: default
 			<img alt="" src="{{ site.baseurl }}/svg/rgd-square.svg"> 
 		</div>
 		<div class="text-box">
-			<h2>
+			<h3>
 				Spec Work 
-			</h2>
+			</h3>
 			<p>
 				<em>Learn what spec work is and why it’s harmful to our industry</em> 
 			</p>
@@ -61,9 +61,9 @@ layout: default
 			<a href="https://www.rgd.ca/resources/no-spec">Read more ➜</a> 
 		</div>
 	</div>
-	<h2 name="form">
+	<h3 name="form">
 		Submit a job 
-	</h2>
+	</h3>
 	<p>
 		Once you submit your information, we will vet it, then distribute it to our students. They will contact you directly, where you can evaluate and choose amongst them as you see fit. Negotiation of rates will be between you and the candidate. 
 	</p>

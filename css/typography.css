@@ -2,6 +2,16 @@
 {
 	--serif: 'Merriweather', serif;
 	--sans: 'Open Sans', sans-serif;
+	--background-color: var(--white);
+	--white: rgb(255, 255, 255);
+	--grey: rgb(100, 102, 106);
+	--black: rgb(0, 0, 0);
+	--orange: rgb(224, 173, 59);
+	--text-color: rgb(0, 0, 0);
+	--dark-green: rgb(43, 101, 65);
+	--dark-green-50: rgb(125, 167, 141);
+	--lime-green: rgb(149, 200, 70);
+	--teal: rgb(67, 152, 164);
 }
 
 *, *::before, *::after
@@ -30,34 +40,36 @@ html
 p { margin-bottom: 2.0rem; }
 .sans { font-family: var(--sans); }
 
-.skip-links {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.skip-links
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
-.skip-links > li::before {
-  content: none;
-}
+.skip-links > li::before { content: none; }
 
 .skip-links a,
-.skip-links button {
-  padding: .5em .75em;
-  position: absolute;
-  top: -10em;
-  z-index: 10000; /* To make sure they're always on top */
-  background-color: #000;
-  border: 0;
-  color: #fff;
-  font-size: 1.125rem;
-  font-weight: bold;
-  text-decoration: none;
+.skip-links button
+{
+	padding: .5em .75em;
+	position: absolute;
+	top: -10em;
+	z-index: 10000;
+	/* To make sure they're always on top */
+	background-color: #000;
+	border: 0;
+	color: #fff;
+	font-size: 1.125rem;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .skip-links a:focus,
-.skip-links button:focus {
-  outline-offset: 3px;
-  top: 0;
+.skip-links button:focus
+{
+	outline-offset: 3px;
+	top: 0;
 }
 
 .hidden
@@ -75,10 +87,13 @@ blockquote
 	font-style: italic;
 }
 
+/* * * * * * HEADINGS * * * * *  */
+
 h1, h2, h3, h4, h5, h6
 {
 	font-family: var(--sans);
 	font-style: normal;
+	letter-spacing: -0.05rem;
 }
 
 h1
@@ -123,14 +138,84 @@ h1 + p,
 	h3 + h4,
 	h4 + h5,
 	h5 + h6 { margin-top: 0.25rem; }
+
+h1
+{
+	font-size: clamp(2rem, 6vw, 4rem);
+	line-height: 1;
+}
+
+.banner h2
+{
+	font-family: var(--serif);
+	color: black;
+	font-weight: 400;
+	font-size: clamp(1rem, 4vw, 1.75rem);
+	text-wrap: balance;
+	margin: 1.5rem 0;
+}
+
+h2 {
+    color: var(--dark-green);
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin: 0;
+}
+
+.curriculum h2, .interested h2, footer h2, .grads h2, .sample-work h2, .fieldwork h2 {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.sample-work h2, footer h2 {
+    color: white;
+}
+
+.grads h2, .interested h2 {
+    color: black;
+}
+
+h3 {
+    color: var(--dark-green);
+    font-size: clamp(.85rem, 4vw, 1.5rem);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.curriculum h3 {
+    margin-bottom: 0.5rem;
+    font-size: clamp(.85rem, 4vw, 1.25rem);
+}
+
 p + p { margin-bottom: 1rem; }
 ul + p { margin-top: 2rem; }
 
+.hanging-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hanging-list li {
+  position: relative;
+  padding-left: 1rem;
+  text-indent: 1rem;
+}
+
+.hanging-list li::before {
+  content: "•";
+  color: var(--dark-green);
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  font-size: 1em;
+  line-height: 1;
+}
+
 hr
 {
-	border: 2px solid #EBEBEB;
-	max-width: 25%;
-	margin: 0 auto;
+	border: 2px solid #C0C0C0;
+	max-width: 33.333%;
+	margin: 1rem auto;
 }
 
 dt
@@ -172,29 +257,13 @@ strong, bold, .bold
 	text-decoration: none;
 }
 
-.masthead-link {
-	border-bottom: 2px solid var(--lime-green);
-}
+.masthead-link { border-bottom: 2px solid var(--lime-green); }
+a.masthead-link:hover { border-bottom: 2px solid white; }
 
-a.masthead-link:hover {
-	border-bottom: 2px solid white;
-}
-
-.banner h1 {
-	font-size: clamp(2rem, 6vw, 4rem);
-	line-height: 1;
-}
-
-.banner h2
+.banner div
 {
-	font-family: var(--serif);
-	font-weight: 400;
-	font-size: clamp(1rem, 4vw, 1.5rem);
-	text-wrap: balance;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
-
-.banner div { margin-bottom: 1rem; }
 
 .news h2
 {
@@ -215,13 +284,6 @@ a.masthead-link:hover {
 .news p { font-size: .85rem; }
 .news a:hover { border-bottom: solid 2px lightgrey; }
 .news-item { hyphens: none; }
-
-.stat-block h2, .satisfaction h2
-{
-	margin: 0 0 .5rem 0;
-	font-size: 1.25rem;
-	color: var(--dark-green);
-}
 
 .stat-block ul
 {
@@ -268,20 +330,6 @@ a.masthead-link:hover {
 	text-indent: 0;
 }
 
-.post ul
-{
-	list-style: none;
-	padding-left: 0;
-	margin-left: 1rem;
-}
-
-.post ul li
-{
-	position: relative;
-	padding-left: 1.5rem;
-	text-indent: 0;
-}
-
 .checklist ul li::before
 {
 	content: "☑";
@@ -304,10 +352,18 @@ a.masthead-link:hover {
 	font-size: 1rem;
 }
 
-.grads h2
+.post ul
 {
-	text-align: center;
-	font-size: clamp(1.5rem, 4vw, 3rem);
+	list-style: none;
+	padding-left: 0;
+	margin-left: 1rem;
+}
+
+.post ul li
+{
+	position: relative;
+	padding-left: 1.5rem;
+	text-indent: 0;
 }
 
 .grads article
@@ -347,13 +403,6 @@ a.masthead-link:hover {
 	border-bottom: 2px solid var(--teal);
 }
 
-.sample-work h2
-{
-	text-align: center;
-	font-size: clamp(1.5rem, 4vw, 3rem);
-	color: #fff;
-}
-
 .sample-work p
 {
 	margin: 0 auto 1.5rem auto;
@@ -370,14 +419,6 @@ a.masthead-link:hover {
 	height: 128px;
 	width: 128px;
 }
-
-.curriculum h2
-{
-	text-align: center;
-	font-size: clamp(1.5rem, 4vw, 3rem);
-}
-
-.curriculum h3 { margin-bottom: 1rem; }
 
 .curriculum p
 {
@@ -423,7 +464,6 @@ a.masthead-link:hover {
 }
 
 .curriculum li a:hover { border-bottom: 2px solid lightgrey; }
-.faculty h2 { text-align: center; }
 
 .faculty > p
 {
@@ -487,12 +527,6 @@ a.masthead-link:hover {
 	margin-bottom: 1rem;
 }
 
-.rgd h2
-{
-	margin-top: 0;
-	padding-top: 0;
-}
-
 .rgd div:nth-child(2) { max-width: 60ch; }
 
 .rgd a
@@ -503,7 +537,6 @@ a.masthead-link:hover {
 
 .rgd-link { border-bottom: 2px solid red; }
 .rgd a:hover { border-bottom: 2px solid lightgrey; }
-.portfolio-reqs h2 { font-size: clamp(1.5rem, 4vw, 3rem); }
 
 .portfolio-reqs a
 {
@@ -514,11 +547,11 @@ a.masthead-link:hover {
 
 .portfolio-reqs a:hover { border-bottom: 2px solid lightgrey; }
 
-.interested h2
-{
-	color: white;
-	text-align: center;
-	font-size: clamp(1.5rem, 4vw, 3rem);
+.interested {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .interested p { color: white; }
@@ -538,13 +571,6 @@ a.masthead-link:hover {
 
 .footer > a { border-bottom: 2px solid white; }
 footer ul { list-style: none; }
-
-footer h2
-{
-	margin: 0.5rem auto;
-	text-align: center;
-	color: white;
-}
 
 footer p
 {
@@ -577,11 +603,19 @@ footer a:hover { border-bottom: solid 2px white; }
 
 .footer-copyright { font-size: 0.85rem; }
 
+.logo-algonquindesign {
+	width: 100%;
+	min-width: 100px;
+	max-width: 175px;
+	height: auto;
+}
+
 .logo-algonquin
 {
-	width: 200px;
+	width: 100%;
+	min-width: 200px;
+	max-width: 300px;
 	height: auto;
-	display: inline-block;
 }
 
 .btn

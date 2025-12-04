@@ -15,7 +15,7 @@ layout: default
 
 {% include masthead.html %}
 
-<main role="main">
+<main role="main" class="main-home">
 {% include banner.html %}
 {% include news.html %}
 <hr>
