@@ -20,6 +20,7 @@ layout: default
 {% include news.html %}
 <hr>
 {% include stats.html %}
+{% include fieldwork.html %}
 {% include grads.html %}
 {% include sample-work.html %}
 {% include curriculum.html %}

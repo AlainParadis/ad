@@ -125,6 +125,23 @@ footer
 	margin: 2rem 1rem;
 }
 
+section.fieldwork {
+	background-image: url('../images/grey-bg.png');
+	background-repeat: repeat;
+	background-position: top left;
+	background-size: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+section.fieldwork article {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
 .grads
 {
 	background-color: var(--orange);
@@ -220,6 +237,7 @@ footer
 	background-size: auto;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 2rem;
 }
 
 .sample-work-grid-container
