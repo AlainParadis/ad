@@ -132,7 +132,7 @@ description: "Inquire about hiring one of our fantastic, highly skilled & motiva
 		<fieldset>
 			<legend>Description of the work needed</legend> 
 			<div class="form-text">
-			(General graphic design, web design, branding, motion video, etc.)
+			General graphic design, web design, branding, motion video, etc.
 			</div>
 			<textarea id="work-desc" name="Work-Description" required></textarea>
 			<label class="form-label" for="timeframe">Timeframe to complete the work (2 weeks, 1 month, 6 months, etc…)</label>
@@ -141,7 +141,7 @@ description: "Inquire about hiring one of our fantastic, highly skilled & motiva
 		<fieldset class="app-reqs">
 			<legend>Application requirements</legend> 
 			<div class="form-text">
-			(What information & documents should the applying students send you?)
+			What information & documents should the applying students send you?
 			</div>
 			<div class="form-row">
 			<label class="radio-option">
