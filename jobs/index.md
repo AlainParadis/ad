@@ -1,19 +1,14 @@
 ---
 layout: default
+title: "Jobs"
+description: "Inquire about hiring one of our fantastic, highly skilled & motivated Graphic Design students."
 ---
 <ul class="skip-links">
 	<li><a href="#form">Jump to Form</a></li>
 </ul>
 
-{% include masthead.html %} 
-<section class="banner">
-	<h1>
-		Jobs 
-	</h1>
-	<h2>
-		Inquire about hiring one of our fantastic, highly skilled & motivated Graphic Design students. 
-	</h2>
-</section>
+{% include masthead.html %}
+{% include banner.html %} 
 <main role="main" class="jobs-main">
 	<h3>
 		Hire a Designer 
@@ -74,31 +69,31 @@ layout: default
 		<fieldset>
 			<legend>Identification</legend>
 			<div>
-				<label for="name">Name</label> 
+				<label class="form-label" for="name">Name</label> 
 				<input type="text" id="name" name="Name" placeholder="Name" required="">
 			</div>
 			<div>
-				<label for="email">Email</label> 
+				<label class="form-label" for="email">Email</label> 
                 <input type="email" id="email" name="E-mail" placeholder="E-mail" required="">
 			</div>
 			<div>
-				<label for="telephone">Phone</label> 
+				<label class="form-label" for="telephone">Phone</label> 
                 <input type="telephone" id="tel" name="telephone" placeholder="Telephone">
 			</div>
 			<div>
-				<label for="organization">Organization name <em>(Optional)</em></label> 
+				<label class="form-label" for="organization">Organization name <em>(Optional)</em></label> 
                 <input type="text" id="organization" name="Organization" placeholder="Organization" required="">
 			</div>
 			<div>
-				<label for="address">Address <em>(Optional)</em></label> 
+				<label class="form-label" for="address">Address <em>(Optional)</em></label> 
 				<input type="text" id="address" name="Address" placeholder="Address" required="">
 			</div>
 			<div>
-				<label for="city">City <em>(Optional)</em></label> 
+				<label class="form-label" for="city">City <em>(Optional)</em></label> 
 				<input type="text" id="city" name="City" placeholder="City">
 			</div>
 			<div>
-				<label for="type">You are a…</label> 
+				<label class="form-label" for="type">You are a…</label> 
 				<select id="org-type" name="Org-Type" required="">
 					<option value=""></option>
 					<option value="Individual">Individual</option>
@@ -110,7 +105,7 @@ layout: default
 				</select>
 			</div>
 			<div>
-				<label for="seeking">You’re seeking a designer for…</label> 
+				<label class="form-label" for="seeking">You’re seeking a designer for…</label> 
 				<select id="seeking" name="Seeking" required="">
 					<option value=""></option>
 					<option value="A single job">A single job</option>
@@ -121,35 +116,38 @@ layout: default
 				</select>
 			</div>
 		</fieldset>
-		<fieldset>
-			<legend>Is the work paid?</legend> 
-			<div>
-			    <input type="radio" id="work-paid-yes" name="Paid" value="Yes" checked /> Yes
-                <input type="radio" id="work-paid-no" name="Paid" value="No" /> No
-			</div>
-		</fieldset>
+        <fieldset class="form-work-paid">
+          <legend>Is the work paid?</legend> 
+          <div class="form-row">
+            <label class="radio-option">
+              <input type="radio" id="work-paid-yes" name="Paid" value="Yes" checked>
+              Yes
+            </label>
+            <label class="radio-option">
+              <input type="radio" id="work-paid-no" name="Paid" value="No">
+              No
+            </label>
+          </div>
+        </fieldset>
 		<fieldset>
 			<legend>Description of the work needed</legend> 
-			<p>
-				(General graphic design, web design, branding, motion video, etc.) 
-			</p>
+			<div class="form-text">
+			(General graphic design, web design, branding, motion video, etc.)
+			</div>
 			<textarea id="work-desc" name="Work-Description" required></textarea>
-			<label for="timeframe">Timeframe to complete the work</label> 
-			<p>
-				(2 weeks, 1 month, 6 months, etc.) 
-			</p>
+			<label class="form-label" for="timeframe">Timeframe to complete the work (2 weeks, 1 month, 6 months, etc…)</label>
 			<input type="text" id="timeframe" name="timeframe" placeholder="Timeframe" required="">
 		</fieldset>
-		<fieldset>
+		<fieldset class="app-reqs">
 			<legend>Application requirements</legend> 
-			<p>
-				(What information & documents should the applying students send you?) 
-			</p>
-			<div>
-                <input type="checkbox" id="send-resume" name="send-resume" value="Résumé" /> Résumé
+			<div class="form-text">
+			(What information & documents should the applying students send you?)
 			</div>
-			<div>
+			<div class="form-row">
+			<label class="radio-option">
+                <input type="checkbox" id="send-resume" name="send-resume" value="Résumé" /> Résumé
                 <input type="checkbox" id="send-portfolio" name="send-portfolio" value="Portfolio" /> Portfolio
+            </label>
 			</div>
 		</fieldset>
 		<input type="hidden" name="_email.subject" value="Student Employment Opportunity" />
@@ -159,6 +157,5 @@ layout: default
 			<button class="" type="submit">Submit</button>
 		</div>
 		</form>
-
 </main>
 {% include footer.html %}

@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 <ul class="skip-links">
 	<li><a href="#news">Jump to News</a></li>

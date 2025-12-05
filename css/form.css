@@ -1,34 +1,36 @@
-fieldset {
-    margin: 1rem 0;
-    padding: 1rem;
-    border: solid 1px grey;
+fieldset
+{
+	margin: 1rem 0;
+	padding: 1rem;
+	border: solid 1px grey;
 	max-width: 90vw;
 }
-legend {
-font-weight: bold;
-}
-label
+
+legend { font-weight: bold; }
+
+.form-label
 {
-	margin: 0.5rem 0 0 0;
+	margin: 0.5rem 0 0.25rem 0;
 	display: flex;
 	flex-direction: row;
-    gap: 0.3rem;
-    width: 65ch;
+	gap: 0.3rem;
+	width: 65ch;
 }
-
+.form-text {
+	margin: 0.5rem 0 0.25rem 0;
+}
 input,
 textarea
 {
 	display: block;
 	height: 2rem;
-	width: 65ch;
 	background-color: #fff;
 	border: 2px solid #666;
 	border-radius: 0;
 	font-family: var(--sans);
 	font-size: 1rem;
 	line-height: 1.5rem;
-    padding: 8px;
+	padding: 8px;
 }
 
 textarea
@@ -37,10 +39,44 @@ textarea
 	resize: horizontal;
 }
 
-.fieldwork-form em { color: grey; }
-
 input:focus,
+
 textarea:focus { border: solid 2px var(--dark-green); }
+
+textarea, select, input[type="text"], input[type="email"], input[type="telephone"]
+{
+	border: solid 2px #666;
+	width: 95%;
+}
+
+select
+{
+	display: block;
+	border: 2px solid #666;
+	border-radius: 0px;
+	font-family: system-ui, -apple-system, sans-serif;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #222;
+	background-color: #fff;
+	padding: 0.4rem 0.6rem;
+}
+
+.form-row {
+  display: flex;             /* yes + no on one line */
+  gap: 1.5rem;               /* space between the two options */
+}
+
+.radio-option {
+  display: inline-flex;      /* radio + text on one line */
+  align-items: center;       /* vertical alignment */
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"], .radio-option input[type="checkbox"] {
+  margin: 0 1rem;
+}
 
 button[type="submit"]
 {
@@ -58,3 +94,8 @@ button[type="submit"]
 }
 
 button[type="submit"]:hover { background: var(--lime-green); }
+
+@media (min-width: 900px)
+{
+	textarea, select, input[type="text"], input[type="email"], input[type="telephone"] { width: 70%; }
+}

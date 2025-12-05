@@ -1,11 +1,12 @@
 ---
 layout: default
+title: "Fieldwork"
+serial: "2"
 ---
 
 {% include masthead.html %}
-
+{% include banner.html %}
 <main role="main" class="main-fieldwork">
-{% include fieldwork-banner.html %}
 <section class="intro">
 	<h2>
 		Graphic Design Fieldwork 
@@ -51,28 +52,28 @@ layout: default
 	</h3>
     	<form class="" action="https://submit-form.com/DrQxZHCef">
 		<div class="">
-			<label class="" for="Organization">Organization name</label> 
+			<label class="form-label" for="Organization">Organization name</label> 
 			<input type="text" id="Organization" name="Organization" placeholder="Organization Name" required="">
 		</div>
 		<fieldset class="">
 			<legend>Contact Details</legend> 
 			<p class="">
-				Your personal details—or the person whom should be contacted about the fieldwork placements.
+				Your contact details, or the person who should be contacted about the fieldwork placements.
 			</p>
 			<div class="">
-				<label class="" for="contact-person">Contact Person Name</label> 
+				<label class="form-label" for="contact-person">Contact Person Name</label> 
 				<input type="text" id="contact-person" name="Contact Person" placeholder="Contact Person" required="">
 			</div>
 			<div class="">
-				<label class="" for="contact-job">Contact Person Job Title</label> 
+				<label class="form-label" for="contact-job">Contact Person Job Title</label> 
 				<input type="text" id="contact-job-title" name="Contact Job Title" placeholder="Contact Job Title" required="">
 			</div>
 			<div class="">
-				<label class="" for="contact-email">Contact E-mail</label> 
+				<label class="form-label" for="contact-email">Contact E-mail</label> 
 				<input type="email" id="contact-email" name="Contact Email" placeholder="Contact Email" required="">
 			</div>
 			<div class="">
-				<label class="" for="contact-tel">Contact Telephone <em class="">(Optional)</em></label> 
+				<label class="form-label" for="contact-tel">Contact Telephone <em class="">(Optional)</em></label> 
 				<input type="tel" id="contact-tel" name="Contact Tel" placeholder="Contact Telephone">
 			</div>
 		</fieldset>
@@ -82,11 +83,11 @@ layout: default
 				Details about the organization: website, location, etc.
 			</p>
 			<div class="">
-				<label class="" for="org-address">Organization Address</label>
+				<label class="form-label" for="org-address">Organization Address</label>
 				<textarea id="org-address" name="Organization Address" placeholder="Organization Address"></textarea>
 			</div>
 			<div class="">
-				<label class="" for="organization-url">Organization Website <em class="">(Optional)</em></label> 
+				<label class="form-label" for="organization-url">Organization Website <em class="">(Optional)</em></label> 
 				<input type="text" id="organization-url" name="Organization URL" placeholder="Organization URL" required="">
 			</div>
 		</fieldset>
@@ -96,7 +97,7 @@ layout: default
 				Describe the nature of the work a student will be undertaking. Is it web design, design for print, packaging, etc.?
 			</p>
 			<div class="">
-				<label class="" for="work-details">Work Details</label>
+				<label class="form-label" for="work-details">Work Details</label>
 				<textarea id="work-details" name="Work Details" placeholder="Describe the work." required=""></textarea>
 			</div>
 		</fieldset>
