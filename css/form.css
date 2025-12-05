@@ -7,7 +7,7 @@ fieldset {
 legend {
 font-weight: bold;
 }
-.fieldwork-form label
+label
 {
 	margin: 0.5rem 0 0 0;
 	display: flex;
@@ -39,10 +39,10 @@ textarea
 
 .fieldwork-form em { color: grey; }
 
-.fieldwork-form input:focus,
-.fieldwork-form textarea:focus { border: solid 2px var(--dark-green); }
+input:focus,
+textarea:focus { border: solid 2px var(--dark-green); }
 
-.fieldwork-form button[type="submit"]
+button[type="submit"]
 {
 	background: var(--dark-green);
 	color: #fff;
@@ -57,4 +57,4 @@ textarea
 	transition: background 0.18s;
 }
 
-.fieldwork-form button[type="submit"]:hover { background: var(--lime-green); }
+button[type="submit"]:hover { background: var(--lime-green); }

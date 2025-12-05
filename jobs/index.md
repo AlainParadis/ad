@@ -70,36 +70,36 @@ layout: default
 	<p>
 		If you do not receive any responses, it's possible their schedules are full. You may reach out to Alain Paradis to enquire. 
 	</p>
-		<form action="https://formsubmit.co/paradia@algonquincollege.com" method="POST" />
+    	<form class="" action="https://submit-form.com/DrQxZHCef">
 		<fieldset>
-			<legend>Identification</legend> 
+			<legend>Identification</legend>
 			<div>
 				<label for="name">Name</label> 
-				<input id="name" name="Name" required> 
+				<input type="text" id="name" name="Name" placeholder="Name" required="">
 			</div>
 			<div>
 				<label for="email">Email</label> 
-				<input type="email" id="email" name="Email" required> 
+                <input type="email" id="email" name="E-mail" placeholder="E-mail" required="">
 			</div>
 			<div>
-				<label for="tel">Phone</label> 
-				<input type="tel" id="tel" name="Phone" required> 
+				<label for="telephone">Phone</label> 
+                <input type="telephone" id="tel" name="telephone" placeholder="Telephone">
 			</div>
 			<div>
-				<label for="org">Organization name <em>(Optional)</em></label> 
-				<input id="org" name="Organization"> 
+				<label for="organization">Organization name <em>(Optional)</em></label> 
+                <input type="text" id="organization" name="Organization" placeholder="Organization" required="">
 			</div>
 			<div>
-				<label for="addr">Address <em>(Optional)</em></label> 
-				<input id="addr" name="Address"> 
+				<label for="address">Address <em>(Optional)</em></label> 
+				<input type="text" id="address" name="Address" placeholder="Address" required="">
 			</div>
 			<div>
 				<label for="city">City <em>(Optional)</em></label> 
-				<input id="city" name="City"> 
+				<input type="text" id="city" name="City" placeholder="City">
 			</div>
 			<div>
 				<label for="type">You are a…</label> 
-				<select id="type" name="Type" required>
+				<select id="org-type" name="Org-Type" required="">
 					<option value=""></option>
 					<option value="Individual">Individual</option>
 					<option value="Design firm">Design firm</option>
@@ -111,7 +111,7 @@ layout: default
 			</div>
 			<div>
 				<label for="seeking">You’re seeking a designer for…</label> 
-				<select id="seeking" name="Seeking" required>
+				<select id="seeking" name="Seeking" required="">
 					<option value=""></option>
 					<option value="A single job">A single job</option>
 					<option value="A limited-time contract">A limited-time contract</option>
@@ -124,8 +124,8 @@ layout: default
 		<fieldset>
 			<legend>Is the work paid?</legend> 
 			<div>
-				<input type="radio" id="work-paid-yes" name="Paid" value="Yes"> <label for="work-paid-yes">Paid</label> 
-				<input type="radio" id="work-paid-no" name="Paid" value="No"> <label for="work-paid-no">Not paid</label> 
+			    <input type="radio" id="work-paid-yes" name="Paid" value="Yes" checked /> Yes
+                <input type="radio" id="work-paid-no" name="Paid" value="No" /> No
 			</div>
 		</fieldset>
 		<fieldset>
@@ -133,12 +133,12 @@ layout: default
 			<p>
 				(General graphic design, web design, branding, motion video, etc.) 
 			</p>
-			<textarea id="desc" name="Description" required></textarea>
+			<textarea id="work-desc" name="Work-Description" required></textarea>
 			<label for="timeframe">Timeframe to complete the work</label> 
 			<p>
 				(2 weeks, 1 month, 6 months, etc.) 
 			</p>
-			<input id="timeframe" name="Timeframe" required> 
+			<input type="text" id="timeframe" name="timeframe" placeholder="Timeframe" required="">
 		</fieldset>
 		<fieldset>
 			<legend>Application requirements</legend> 
@@ -146,18 +146,19 @@ layout: default
 				(What information & documents should the applying students send you?) 
 			</p>
 			<div>
-				<input type="checkbox" id="send-resume" name="Resume" value="Yes"> <label for="send-resume">Résumé</label> 
+                <input type="checkbox" id="send-resume" name="send-resume" value="Résumé" /> Résumé
 			</div>
 			<div>
-				<input type="checkbox" id="send-portfolio" name="Portfolio" value="Yes"> <label for="send-portfolio">Portfolio</label> 
+                <input type="checkbox" id="send-portfolio" name="send-portfolio" value="Portfolio" /> Portfolio
 			</div>
 		</fieldset>
-		<input type="hidden" name="_subject" value="Student Employment Opportunity"> 
-		<input type="hidden" name="_next" value="https://algonquindesign.ca/jobs/thanks/"> 
-		<input type="hidden" name="_format" value="plain"> <small>By providing your contact information, you are granting the Graphic Design program permission to contact you for program-related activities. We mostly wish to invite you to our yearly Grad Show. We will not share your private information.</small> 
+		<input type="hidden" name="_email.subject" value="Student Employment Opportunity" />
+		<input type="hidden" name="_redirect" value="https://algonquindesign.ca/jobs/thanks/"> 
+		<small class="">By providing your contact information, you are granting the Graphic Design program permission to contact you for program-related activities. We mostly wish to invite you to our yearly Grad Show. We will not share your private information.</small> 
 		<div>
-			<button type="submit">Submit job</button> 
+			<button class="" type="submit">Submit</button>
 		</div>
-	</form>
+		</form>
+
 </main>
 {% include footer.html %}

@@ -41,10 +41,10 @@
 	<h3>
 		Employer’s fieldwork request 
 	</h3>
-    	<form class="" action="https://formsubmit.co/paradia@algonquincollege.com" method="POST">
+    	<form class="" action="https://submit-form.com/DrQxZHCef">
 		<div class="">
-			<label class="" for="org">Organization name</label> 
-			<input id="org" name="Organization" required> 
+			<label class="" for="Organization">Organization name</label> 
+			<input type="text" id="Organization" name="Organization" placeholder="Organization Name" required="">
 		</div>
 		<fieldset class="">
 			<legend>Contact Details</legend> 
@@ -53,19 +53,19 @@
 			</p>
 			<div class="">
 				<label class="" for="contact-person">Contact person name</label> 
-				<input id="contact-person" name="Contact-Person" required> 
+				<input type="text" id="contact-person" name="Contact Person" placeholder="Contact Person" required="">
 			</div>
 			<div class="">
 				<label class="" for="contact-job">Contact person job title</label> 
-				<input id="tel" name="Contact-Job-Title" required> 
+				<input type="text" id="contact-job-title" name="Contact Job Title" placeholder="Contact Job Title" required="">
 			</div>
 			<div class="">
 				<label class="" for="contact-email">Contact email</label> 
-				<input type="email" id="contact-email" name="Contact-Email" required> 
+				<input type="email" id="contact-email" name="Contact Email" placeholder="Contact Email" required="">
 			</div>
 			<div class="">
 				<label class="" for="contact-tel">Contact telephone <em class="">(Optional)</em></label> 
-				<input type="tel" id="contact-tel" name="Contact-Tel"> 
+				<input type="tel" id="contact-tel" name="Contact Tel" placeholder="Contact Telephone">
 			</div>
 		</fieldset>
 		<fieldset class="">
@@ -74,11 +74,12 @@
 				Details about the organization: website, location, etc.
 			</p>
 			<div class="">
-				<label class="" for="org-addr">Organization address</label> <textarea id="org-addr" name="Organization-Address" required></textarea>
+				<label class="" for="org-address">Organization address</label>
+				<textarea id="org-address" name="Organization Address" placeholder="Organization Address"></textarea>
 			</div>
 			<div class="">
-				<label class="" for="org-url">Organization website <em class="">(Optional)</em></label> 
-				<input type="text" id="org-url" name="Organization-URL"> 
+				<label class="" for="organization-url">Organization website <em class="">(Optional)</em></label> 
+				<input type="text" id="organization-url" name="Organization URL" placeholder="Organization URL" required="">
 			</div>
 		</fieldset>
 		<fieldset class="">
@@ -87,15 +88,13 @@
 				Describe the nature of the work a student will be undertaking. Is it web design, design for print, packaging, etc.?
 			</p>
 			<div class="">
-				<label class="" for="work">Work details</label> <textarea id="work" name="Description-of-Work" required></textarea>
+				<label class="" for="work-details">Work details</label>
+				<textarea id="work-details" name="Work Details" placeholder="Describe the work." required=""></textarea>
 			</div>
 		</fieldset>
-		<input type="hidden" name="_subject" value="Fieldwork Employer Submission"> 
-		<input type="hidden" name="_next" value="https://algonquindesign.ca/fieldwork/thanks/"> 
+		<input type="hidden" name="_email.subject" value="Fieldwork Employer Submission" />
+		<input type="hidden" name="_redirect" value="https://algonquindesign.ca/fieldwork/thanks/"> 
 		<input type="hidden" name="_format" value="plain"> 
-<!--
-      <input type="hidden" name="_cc" value="bromled@algonquincollege.com">
- -->
 		<small class="">By providing your contact information, you are granting the Graphic Design program permission to contact you for program-related activities. We mostly wish to invite you to our yearly Grad Show. We will not share your private information.</small> 
 		<div>
 			<button class="" type="submit">Submit</button>
