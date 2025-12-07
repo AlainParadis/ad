@@ -45,7 +45,7 @@ footer
 	color: #fff;
 }
 
-.main-portfolio-reqs, .jobs-main { max-width: 90vw; }
+.main-portfolio-reqs, .jobs-main { max-width: 80vw; }
 
 .masthead
 {
@@ -76,12 +76,11 @@ footer
 	align-items: left;
 	padding: 0rem 1rem;
 	margin-bottom: 1.5rem;
-
 }
 
 .banner-content
 {
-	max-width: 90vw;
+	max-width: 80vw;
 	display: flex;
 	flex-direction: column;
 }
@@ -90,7 +89,6 @@ footer
 {
 	display: grid;
 	background-color: #fff;
-	max-width: 100%;
 }
 
 .news-grid
@@ -100,7 +98,7 @@ footer
 	justify-self: center;
 	align-self: start;
 	gap: 1rem;
-	max-width: 90vw;
+	max-width: 80vw;
 	padding-top: 1rem;
 	margin-bottom: 2rem;
 }
@@ -114,7 +112,7 @@ footer
 
 .post
 {
-	max-width: 90vw;
+	max-width: 80vw;
 	margin: 0 auto;
 }
 
@@ -122,10 +120,10 @@ footer
 {
 	display: grid;
 	grid-template-columns: 1fr;
-	max-width: 60ch;
+	max-width: 80vw;
 	padding-top: 0;
 	margin: 1rem 1rem;
-
+	border: solid 1px magenta;
 }
 
 section.fieldwork
@@ -144,7 +142,7 @@ section.fieldwork
 
 section.fieldwork article
 {
-	max-width: 90vw;
+	max-width: 80vw;
 	margin: 0 auto;
 }
 
@@ -311,23 +309,25 @@ section.fieldwork article
 	border-radius: 5px;
 }
 
-.rgd
+.rgd-wrapper
 {
 	background-color: #fff;
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 1rem;
+	justify-items: center;
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 1rem 0;
 	color: #000;
 }
 
-.rgd div:first-child { justify-self: start; }
+.rgd { width: 90%; }
+.rgd-logo { }
 
 .rgd div svg
 {
-	width: 75%;
+	width: 50%;
 	height: auto;
 }
 
@@ -339,41 +339,39 @@ section.fieldwork article
 	background-position: top left;
 	background-size: auto;
 	display: flex;
-	flex-direction: column;
-	padding: 2rem 2rem;
+	justify-content: center;
+	padding: 2rem;
 	color: #000;
 }
 
-.portfolio-reqs-questions {
-    margin-bottom: 2rem;
+.portfolio-reqs-content
+{
+	display: flex;
+	flex-direction: column;
 }
 
+.portfolio-reqs-questions { margin-bottom: 2rem; }
 
-.main-portfolio-reqs ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem; 
+.main-portfolio-reqs ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
 }
 
-.main-portfolio-reqs li {
-  overflow: hidden;
+.main-portfolio-reqs li { overflow: hidden; }
+
+.main-portfolio-reqs img
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: solid 1px grey;
 }
-
-.main-portfolio-reqs img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: solid 1px grey;
-}
-
-
-
-
-
 
 .interested
 {
@@ -420,17 +418,17 @@ section.fieldwork article
 
 .intro, .fieldwork-highlights, .what-we-need, .fieldwork-form
 {
-	max-width: 90vw;
+	max-width: 80vw;
 	margin: 0rem 2rem;
 	padding: 0;
 }
 
-@media (min-width: 768px)
+@media (min-width: 600px)
 {
 	.content-box
 	{
 		flex-direction: row;
-		max-width: 90vw;
+		max-width: 80vw;
 		object-fit: cover;
 	}
 	
@@ -446,6 +444,33 @@ section.fieldwork article
 	{
 		flex: 1 1 50%;
 		padding: 2rem;
+	}
+	
+	.rgd-wrapper
+	{
+		background-color: #fff;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		justify-items: center;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 1rem 0;
+		color: #000;
+	}
+	
+	.rgd { width: 90%; }
+	.rgd-logo { }
+	
+	.rgd div svg
+	{
+		width: 33.33%;
+		height: auto;
+	}
+	
+	.portfolio-reqs-content
+	{
+		max-width: 70vw;
 	}
 	
 	.footer-copyright
@@ -479,10 +504,15 @@ section.fieldwork article
 	footer ul.resources { border-bottom: solid 2px var(--lime-green); }
 }
 
-@media (min-width: 600px)
+@media (min-width: 768px)
 {
 	.banner { padding: 2rem; }
-	.banner-content { max-width: 90vw; }
+	
+	.banner-content
+	{
+		max-width: 80vw;
+		margin: 0 auto;
+	}
 	
 	.grads ol
 	{
@@ -503,18 +533,32 @@ section.fieldwork article
 	
 	.faculty ul.person
 	{
+		max-width: 70vw;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
 	
-	.rgd
+	.rgd-wrapper
 	{
 		background-color: #fff;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		justify-items: center;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 1rem 0;
+		color: #000;
+	}
+	
+	.rgd
+	{
+		width: 90%;
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 	}
 	
-	.rgd div:first-child { justify-self: end; }
+	.rgd-logo { }
 	
 	.rgd div svg
 	{
@@ -544,7 +588,7 @@ section.fieldwork article
 	
 	.intro, .highlights, .employer, .fieldwork-form
 	{
-		max-width: 90vw;
+		max-width: 80vw;
 		margin: 0rem 2rem;
 		padding: 0;
 	}
@@ -553,7 +597,7 @@ section.fieldwork article
 @media (min-width: 900px)
 {
 	.banner { padding: 2rem; }
-	.banner-content { max-width: 90vw; }
+	.banner-content { max-width: 80vw; }
 	
 	.masthead
 	{
@@ -587,7 +631,7 @@ section.fieldwork article
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		justify-self: center;
 		gap: 2rem;
-		max-width: 90vw;
+		max-width: 80vw;
 		padding-top: 1rem;
 		margin-bottom: 2rem;
 	}
@@ -596,7 +640,7 @@ section.fieldwork article
 	{
 		margin: 1rem auto;
 		text-align: left;
-		max-width: 65vw;
+		max-width: 60vw;
 	}
 	
 	.grads ol
@@ -618,7 +662,7 @@ section.fieldwork article
 	
 	.curriculum
 	{
-		max-width: 90vw;
+		max-width: 80vw;
 		margin: 0 auto;
 		background-color: #fff;
 		padding: 2rem 2rem;
@@ -640,27 +684,27 @@ section.fieldwork article
 	
 	.rgd
 	{
-		background-color: #fff;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-end;
+		padding: 0;
+		max-width: 70vw;
 		gap: 1rem;
-		max-width: 100%;
-		margin: 0 auto;
-		padding: 2rem;
-		color: #000;
 	}
 	
-	.rgd div:first-child
+	.rgd-logo
 	{
-		grid-column: span 1;
-		justify-self: end;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0;
+		width: 400px;
 	}
-	
-	.rgd div:last-child { grid-column: span 3; }
 	
 	.rgd div svg
 	{
-		width: 75%;
+		width: 100%;
 		height: auto;
 	}
 	
@@ -680,7 +724,7 @@ section.fieldwork article
 	
 	.intro, .highlights, .employer, .fieldwork-form
 	{
-		max-width: 90vw;
+		max-width: 80vw;
 		margin: 0rem 2rem;
 		padding: 0;
 	}
