@@ -29,7 +29,6 @@ html
 	hyphenate-limit-zone: 8%;
 }
 
-.center .text-center { text-align: center; }
 p { margin-bottom: 2.0rem; }
 .sans { font-family: var(--sans); }
 
@@ -75,8 +74,7 @@ blockquote
 {
 	margin-left: 1rem;
 	padding-left: 1rem;
-	border-left: solid 6px var(--medium);
-	color: var(--text-color);
+	border-left: solid 6px var(--lime-green);
 	font-style: italic;
 }
 
@@ -87,28 +85,17 @@ h1, h2, h3, h4, h5, h6
 	font-family: var(--sans);
 	font-style: normal;
 	letter-spacing: -0.05rem;
+	font-weight: 600;
+	margin-top: 1rem;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	max-width: 45ch;
 }
 
 h1
 {
 	font-weight: 700;
-	font-style: normal;
-	color: var(--text-color);
-	margin-top: 1rem;
-	margin-bottom: 0;
-	padding-bottom: 0;
 	border-bottom: 0;
-}
-
-h2, h3, h4, h5, h6
-{
-	font-weight: 600;
-	font-style: normal;
-	color: var(--text-color);
-	margin-top: 1rem;
-	margin-bottom: 0;
-	padding-bottom: 0;
-	max-width: 45ch;
 }
 
 :is(h1, h2, h3, h4, h5, h6) a, 
@@ -119,7 +106,7 @@ h2, h3, h4, h5, h6
 	text-decoration-color: transparent;
 }
 
-:is(h1, h2, h3, h4, h5, h6) a:hover { color: var(--medium); }
+:is(h1, h2, h3, h4, h5, h6) a:hover { color: var(--lime-green); }
 h1 + p,
 	h2 + p,
 	h3 + p,
@@ -142,7 +129,6 @@ h1
 .banner h2
 {
 	font-family: var(--serif);
-	color: black;
 	font-weight: 400;
 	font-size: clamp(1rem, 4vw, 1.75rem);
 	text-wrap: balance;
@@ -150,7 +136,6 @@ h1
 }
 
 h2 {
-    color: var(--text-color);
     font-size: clamp(1rem, 4vw, 2rem);
     margin: 0;
 }
@@ -165,12 +150,7 @@ footer { color: white; }
     color: white;
 }
 
-.grads h2, .interested h2 {
-    color: black;
-}
-
 h3 {
-    color: var(--text-color);
     font-size: clamp(.85rem, 4vw, 1.5rem);
     margin-top: 0;
     padding-top: 0;
@@ -239,7 +219,6 @@ em
 strong, bold, .bold
 {
 	font-weight: 600;
-	font-style: var(--font_style_normal);
 	color: var(--text-color);
 }
 
@@ -272,7 +251,7 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 
 .news a
 {
-	color: black;
+	color: var(--text-color);
 	text-decoration: none;
 	border-bottom: 2px solid var(--teal);
 }
@@ -280,23 +259,6 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 .news p { font-size: .85rem; }
 .news a:hover { border-bottom: solid 2px lightgrey; }
 .news-item { hyphens: none; }
-
-.stat-block ul
-{
-	margin: 0;
-	padding-left: 1.25rem;
-	list-style: disc;
-}
-
-.stat-block li { margin: .4rem 0; }
-
-.stats > .stat-block:last-child
-{
-	flex-basis: 100%;
-	max-width: 60ch;
-	margin: 0 auto;
-	text-align: left;
-}
 
 .checklist ul, .opportunities ul, .highlights ul
 {
@@ -362,16 +324,9 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 	text-indent: 0;
 }
 
-.grads article
-{
-	color: black;
-	width: 60vw;
-	margin: 0 auto;
-}
-
 .grads article a
 {
-	color: black;
+	color: var(--text-color);
 	border-bottom: 2px solid var(--teal);
 }
 
@@ -385,7 +340,7 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 
 .grads a
 {
-	color: black;
+	color: var(--text-color);
 	padding-bottom: 2px;
 	text-decoration: none;
 	border-bottom: 2px solid white;
@@ -632,7 +587,7 @@ footer a:hover { border-bottom: solid 2px white; }
 a.btn-small
 {
 	background-color: var(--orange);
-	color: var(--medium);
+	color: var(--lime-green);
 	font-family: var(--sans);
 	font-size: 1rem;
 	font-weight: bold;
@@ -640,7 +595,7 @@ a.btn-small
 	padding: 0.25rem 2rem;
 	margin: 2rem auto;
 	text-align: center;
-	border: 4px solid var(--medium);
+	border: 4px solid var(--lime-green);
 	border-radius: 9999px;
 	background-clip: padding-box;
 	display: block;
