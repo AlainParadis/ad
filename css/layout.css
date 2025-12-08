@@ -45,15 +45,6 @@ body
 	padding: 1rem 2rem;
 }
 
-@media (min-width: 800px)
-{
-	.masthead
-	{
-		flex-direction: row;
-		justify-content: space-between;
-	}
-}
-
 .banner
 {
 	background-image: url('../images/green-light-bg.png');
@@ -68,7 +59,7 @@ body
 .news
 {
 	background-color: var(--white);
-	width: 100%;
+	width: 90%;
 	display: grid;
 	justify-content: center;
 	grid-template-columns: repeat( auto-fit, minmax(min(280px, 90%), 1fr) );
@@ -98,7 +89,7 @@ body
 	display: grid;
 	gap: 2rem;
 	grid-template-columns: repeat( auto-fit, minmax(min(280px, 90%), 1fr) );
-	max-width: 90vw;
+	width: 90vw;
 	margin-bottom: 1rem;
 }
 
@@ -124,7 +115,7 @@ body
 
 .fieldwork article
 {
-	max-width: 80vw;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
@@ -194,16 +185,6 @@ body
 	margin: 0 auto;
 }
 
-@media (min-width: 800px)
-{
-	.grads ol { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (min-width: 1280px)
-{
-	.grads ol { grid-template-columns: repeat(4, 1fr); }
-}
-
 .grads ol li
 {
 	align-self: start;
@@ -254,26 +235,6 @@ body
 	border: solid 1px black;
 }
 
-@media (min-width: 800px)
-{
-	.sample-work-grid-container
-	{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(3, auto);
-	}
-}
-
-@media (min-width: 1280px)
-{
-	.sample-work-grid-container
-	{
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, auto);
-	}
-}
-
 .curriculum
 {
 	background-color: var(--white);
@@ -286,16 +247,6 @@ body
 	grid-template-columns: 1fr;
 	margin: 0 auto;
 	gap: 1rem;
-}
-
-@media (min-width: 800px)
-{
-	.curriculum div { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (min-width: 1280px)
-{
-	.curriculum div { grid-template-columns: repeat(3, 1fr); }
 }
 
 .faculty
@@ -329,16 +280,6 @@ body
 	border-radius: 5px;
 }
 
-@media (min-width: 800px)
-{
-	.faculty ul.person { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (min-width: 1280px)
-{
-	.faculty ul.person { grid-template-columns: repeat(3, 1fr); }
-}
-
 .rgd
 {
 	background-color: var(--white);
@@ -363,24 +304,6 @@ body
 	display: block;
 	width: 100%;
 	height: auto;
-}
-
-@media (min-width: 800px)
-{
-	.rgd
-	{
-		flex-direction: row;
-		text-align: left;
-		align-items: flex-start;
-	}
-	
-	.rgd-logo { flex: 0 0 auto; }
-	.rgd-text { flex: 1 1 auto; }
-}
-
-@media (min-width: 1280px)
-{
-	
 }
 
 .portfolio-reqs
@@ -408,30 +331,6 @@ body
 
 .portfolio-reqs-logo .svg { }
 
-@media (min-width: 800px)
-{
-	.portfolio-reqs
-	{
-		flex-direction: row;
-		text-align: left;
-		align-items: flex-start;
-	}
-	
-	.portfolio-reqs-logo
-	{
-		flex: 0 0 auto;
-		max-width: 200px;
-	}
-	
-	.portfolio-reqs-text { flex: 1 1 auto; }
-	.portfolio-reqs-logo .svg { max-width: 100px; }
-}
-
-@media (min-width: 1280px)
-{
-	
-}
-
 .interested
 {
 	background-color: var(--orange);
@@ -443,8 +342,6 @@ body
 	display: flex;
 	flex-direction: column;
 }
-
-.video { }
 
 footer
 {
@@ -502,13 +399,73 @@ footer ul.social li { }
 	margin-top: 1rem;
 }
 
-@media (min-width:800px)
+.main-jobs, .main-fieldwork, main-thanks
 {
+	width: 90%;
+	margin: 0 auto 0 auto;
+}
+
+@media (min-width: 800px)
+{
+	.masthead
+	{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.grads ol { grid-template-columns: repeat(2, 1fr); }
+	
+	.sample-work-grid-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, auto);
+	}
+	
+	.curriculum div { grid-template-columns: repeat(2, 1fr); }
+	.faculty ul.person { grid-template-columns: repeat(2, 1fr); }
+	
+	.rgd
+	{
+		flex-direction: row;
+		text-align: left;
+		align-items: flex-start;
+	}
+	
+	.rgd-logo { flex: 0 0 auto; }
+	.rgd-text { flex: 1 1 auto; }
+	
+	.portfolio-reqs
+	{
+		flex-direction: row;
+		text-align: left;
+		align-items: flex-start;
+	}
+	
+	.portfolio-reqs-logo
+	{
+		flex: 0 0 auto;
+		max-width: 200px;
+	}
+	
+	.portfolio-reqs-text { flex: 1 1 auto; }
+	.portfolio-reqs-logo .svg { max-width: 100px; }
 	nav ul { grid-template-columns: 1fr 1fr; }
 	footer ul.social, footer ul.resources { justify-content: space-between; }
 }
 
 @media (min-width: 1280px)
 {
+	.grads ol { grid-template-columns: repeat(4, 1fr); }
+	
+	.sample-work-grid-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, auto);
+	}
+	
+	.curriculum div { grid-template-columns: repeat(3, 1fr); }
+	.faculty ul.person { grid-template-columns: repeat(3, 1fr); }
 	nav ul { grid-template-columns: repeat(3, 1fr); }
 }
