@@ -1,6 +1,5 @@
 :root
 {
-	--background-color: var(--white);
 	--white: rgb(255, 255, 255);
 	--grey: rgb(100, 102, 106);
 	--black: rgb(0, 0, 0);
@@ -18,51 +17,42 @@ html
 	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
 }
+
+*, *::before, *::after { box-sizing: inherit; }
 
 body
 {
 	background-color: var(--background-color);
 	height: 100%;
-	margin: 0 auto 0 auto;
 	padding: 0;
 	overflow-x: hidden;
 }
 
-main
-{
-	margin: 0 auto;
-	width: 100%;
-	overflow-x: hidden;
-}
-
-footer
-{
-	background-color: var(--dark-green);
-	display: flex;
-	flex-direction: column;
-	padding: 2rem 2rem;
-	color: #fff;
-}
-
-.main-portfolio-reqs, .jobs-main { max-width: 80vw; }
+/* 
+* { outline: 1px solid red; }
+ */
 
 .masthead
 {
+	background-color: var(--dark-green);
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	gap: 1.5rem;
-	text-align: center;
-	background-color: var(--dark-green);
-	color: var(--white);
+	margin: 0;
 	padding: 1rem 2rem;
-	box-sizing: border-box;
 }
 
-.masthead > div { margin: 0 auto; }
+@media (min-width: 800px)
+{
+	.masthead
+	{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
 
 .banner
 {
@@ -71,36 +61,20 @@ footer
 	background-position: top left;
 	background-size: auto;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-	padding: 0rem 1rem;
-	margin-bottom: 1.5rem;
-}
-
-.banner-content
-{
-	max-width: 80vw;
-	display: flex;
-	flex-direction: column;
+	padding: 1rem;
+	margin-bottom: 1rem;
 }
 
 .news
 {
+	background-color: var(--white);
+	width: 100%;
 	display: grid;
-	background-color: #fff;
-}
-
-.news-grid
-{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	justify-self: center;
-	align-self: start;
-	gap: 1rem;
-	max-width: 80vw;
-	padding-top: 1rem;
-	margin-bottom: 2rem;
+	justify-content: center;
+	grid-template-columns: repeat( auto-fit, minmax(min(280px, 90%), 1fr) );
+	gap: 1.5rem;
+	margin-inline: auto;
+	margin-bottom: 1rem;
 }
 
 .news-item
@@ -110,23 +84,31 @@ footer
 	padding: 0.75rem;
 }
 
-.post
+.stats
 {
-	max-width: 80vw;
-	margin: 0 auto;
+	background-color: var(--white);
+	width: 100%;
+	margin-inline: auto;
+	display: grid;
+	justify-items: center;
 }
 
 .stats-grid
 {
 	display: grid;
-	grid-template-columns: 1fr;
-	max-width: 80vw;
-	padding-top: 0;
-	margin: 1rem 1rem;
-	border: solid 1px magenta;
+	gap: 2rem;
+	grid-template-columns: repeat( auto-fit, minmax(min(280px, 90%), 1fr) );
+	max-width: 90vw;
+	margin-bottom: 1rem;
 }
 
-section.fieldwork
+.satisfaction
+{
+	display: block;
+	max-width: 60%;
+}
+
+.fieldwork
 {
 	background-image: url('../images/grey-bg.png');
 	background-repeat: repeat;
@@ -140,7 +122,7 @@ section.fieldwork
 	margin: 0 auto;
 }
 
-section.fieldwork article
+.fieldwork article
 {
 	max-width: 80vw;
 	margin: 0 auto;
@@ -158,7 +140,6 @@ section.fieldwork article
 	gap: 1.5rem;
 	margin: 0 auto;
 	padding: 1rem 2rem;
-	color: white;
 }
 
 .grads article
@@ -204,13 +185,23 @@ section.fieldwork article
 
 .grads ol
 {
-	max-width: 60vw;
+	max-width: 80vw;
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr;
 	justify-items: center;
 	gap: 1rem;
 	margin: 0 auto;
+}
+
+@media (min-width: 800px)
+{
+	.grads ol { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1280px)
+{
+	.grads ol { grid-template-columns: repeat(4, 1fr); }
 }
 
 .grads ol li
@@ -263,11 +254,30 @@ section.fieldwork article
 	border: solid 1px black;
 }
 
-.grid-item img
+@media (min-width: 800px)
 {
+	.sample-work-grid-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, auto);
+	}
+}
+
+@media (min-width: 1280px)
+{
+	.sample-work-grid-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, auto);
+	}
+}
+
+.curriculum
+{
+	background-color: var(--white);
 	width: 100%;
-	height: auto;
-	display: block;
 }
 
 .curriculum div
@@ -278,19 +288,29 @@ section.fieldwork article
 	gap: 1rem;
 }
 
+@media (min-width: 800px)
+{
+	.curriculum div { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1280px)
+{
+	.curriculum div { grid-template-columns: repeat(3, 1fr); }
+}
+
 .faculty
 {
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
-	gap: 1rem;
-	margin: 0 auto;
 	background-color: #ebebeb;
 	padding: 2rem 2rem;
 	background-image: url('../images/grey-bg.png');
 	background-repeat: repeat;
 	background-position: top left;
 	background-size: auto;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	gap: 1rem;
 }
 
 .faculty .person li
@@ -309,68 +329,107 @@ section.fieldwork article
 	border-radius: 5px;
 }
 
-.rgd-wrapper
+@media (min-width: 800px)
 {
-	background-color: #fff;
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 1rem;
-	justify-items: center;
-	max-width: 100%;
-	margin: 0 auto;
-	padding: 1rem 0;
-	color: #000;
+	.faculty ul.person { grid-template-columns: repeat(2, 1fr); }
 }
 
-.rgd { width: 90%; }
-.rgd-logo { }
-
-.rgd div svg
+@media (min-width: 1280px)
 {
-	width: 50%;
+	.faculty ul.person { grid-template-columns: repeat(3, 1fr); }
+}
+
+.rgd
+{
+	background-color: var(--white);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	padding: 2rem 1rem;
+	text-align: center;
+}
+
+.rgd-logo
+{
+	max-width: 260px;
+	width: 100%;
+}
+
+.rgd-logo .svg
+{
+	display: block;
+	width: 100%;
 	height: auto;
+}
+
+@media (min-width: 800px)
+{
+	.rgd
+	{
+		flex-direction: row;
+		text-align: left;
+		align-items: flex-start;
+	}
+	
+	.rgd-logo { flex: 0 0 auto; }
+	.rgd-text { flex: 1 1 auto; }
+}
+
+@media (min-width: 1280px)
+{
+	
 }
 
 .portfolio-reqs
 {
-	background-color: #EBEBEB;
+	background-color: #ebebeb;
 	background-image: url('../images/grey-bg.png');
 	background-repeat: repeat;
 	background-position: top left;
 	background-size: auto;
-	display: flex;
-	justify-content: center;
-	padding: 2rem;
-	color: #000;
-}
-
-.portfolio-reqs-content
-{
+	width: 100%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	padding: 2rem 1rem;
+	text-align: center;
 }
 
-.portfolio-reqs-questions { margin-bottom: 2rem; }
-
-.main-portfolio-reqs ul
+.portfolio-reqs-logo
 {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 1rem;
-}
-
-.main-portfolio-reqs li { overflow: hidden; }
-
-.main-portfolio-reqs img
-{
-	display: block;
+	max-width: 100px;
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border: solid 1px grey;
+}
+
+.portfolio-reqs-logo .svg { }
+
+@media (min-width: 800px)
+{
+	.portfolio-reqs
+	{
+		flex-direction: row;
+		text-align: left;
+		align-items: flex-start;
+	}
+	
+	.portfolio-reqs-logo
+	{
+		flex: 0 0 auto;
+		max-width: 200px;
+	}
+	
+	.portfolio-reqs-text { flex: 1 1 auto; }
+	.portfolio-reqs-logo .svg { max-width: 100px; }
+}
+
+@media (min-width: 1280px)
+{
+	
 }
 
 .interested
@@ -380,352 +439,76 @@ section.fieldwork article
 	background-repeat: repeat;
 	background-position: top left;
 	background-size: auto;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
-	padding: 0 2rem;
-	color: #000;
 }
 
-.content-box
+.video { }
+
+footer
 {
+	background-color: var(--dark-green);
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	max-width: 98vw;
-	margin: 2rem auto;
-	background: #fff;
+	justify-content: center;
+	padding-bottom: 2rem;
 }
 
-.graphic-box
+.footer-content
 {
-	background: #ccc;
+	width: 90%;
+	margin: 0 auto;
+}
+
+nav ul
+{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: start;
+	padding-top: 1rem;
+	border-top: 3px solid var(--lime-green);
+}
+
+footer ul.social, footer ul.resources
+{
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 20px;
+	padding: 1rem 0;
+	border-top: 1px solid var(--lime-green);
+}
+
+footer ul.social li { }
+
+.footer-copyright
+{
+	display: flex;
+	flex-flow: row wrap;
 	align-items: center;
-	align-self: center;
-	justify-content: center;
-	min-width: 100px;
-	max-width: 300px;
-	padding: 0;
+	align-content: center;
+	justify-content: space-between;
+	padding-top: 1rem;
+	border-top: 1px solid var(--lime-green);
 }
 
-.text-box
+.footer-copyright div
 {
-	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	margin-right: 1rem;
+	margin-top: 1rem;
 }
 
-.intro, .fieldwork-highlights, .what-we-need, .fieldwork-form
+@media (min-width:800px)
 {
-	max-width: 80vw;
-	margin: 0rem 2rem;
-	padding: 0;
+	nav ul { grid-template-columns: 1fr 1fr; }
+	footer ul.social, footer ul.resources { justify-content: space-between; }
 }
 
-@media (min-width: 600px)
+@media (min-width: 1280px)
 {
-	.content-box
-	{
-		flex-direction: row;
-		max-width: 80vw;
-		object-fit: cover;
-	}
-	
-	.graphic-box
-	{
-		flex: 1 1 25%;
-		border: solid 1px cyan;
-		object-fit: cover;
-		margin-right: 2rem;
-	}
-	
-	.text-box
-	{
-		flex: 1 1 50%;
-		padding: 2rem;
-	}
-	
-	.rgd-wrapper
-	{
-		background-color: #fff;
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 1rem;
-		justify-items: center;
-		max-width: 100%;
-		margin: 0 auto;
-		padding: 1rem 0;
-		color: #000;
-	}
-	
-	.rgd { width: 90%; }
-	.rgd-logo { }
-	
-	.rgd div svg
-	{
-		width: 33.33%;
-		height: auto;
-	}
-	
-	.portfolio-reqs-content
-	{
-		max-width: 70vw;
-	}
-	
-	.footer-copyright
-	{
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		align-content: center;
-		justify-content: space-between;
-	}
-	
-	.footer-copyright div { margin-top: 1rem; }
-	
-	nav ul, footer ul.social, footer ul.resources
-	{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		list-style-type: none;
-		padding: 1rem 0;
-		margin: 0;
-		gap: .5rem;
-		border-bottom: solid 2px var(--lime-green);
-	}
-	
-	nav ul li
-	{
-		padding: 0;
-		margin: 0;
-	}
-	
-	footer ul.resources { border-bottom: solid 2px var(--lime-green); }
-}
-
-@media (min-width: 768px)
-{
-	.banner { padding: 2rem; }
-	
-	.banner-content
-	{
-		max-width: 80vw;
-		margin: 0 auto;
-	}
-	
-	.grads ol
-	{
-		max-width: 80%;
-		list-style: none;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-	
-	.curriculum div
-	{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		max-width: 80%;
-		margin: 0 auto;
-		gap: 1rem;
-	}
-	
-	.faculty ul.person
-	{
-		max-width: 70vw;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-	
-	.rgd-wrapper
-	{
-		background-color: #fff;
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 1rem;
-		justify-items: center;
-		max-width: 100%;
-		margin: 0 auto;
-		padding: 1rem 0;
-		color: #000;
-	}
-	
-	.rgd
-	{
-		width: 90%;
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-	}
-	
-	.rgd-logo { }
-	
-	.rgd div svg
-	{
-		width: 90%;
-		height: auto;
-	}
-	
-	nav ul
-	{
-		display: grid;
-		grid-template-columns: repeat(3, max-content);
-	}
-	
-	nav ul, footer ul.social, footer ul.resources
-	{
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 1rem;
-	}
-	
-	.sample-work-grid-container
-	{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(3, auto);
-	}
-	
-	.intro, .highlights, .employer, .fieldwork-form
-	{
-		max-width: 80vw;
-		margin: 0rem 2rem;
-		padding: 0;
-	}
-}
-
-@media (min-width: 900px)
-{
-	.banner { padding: 2rem; }
-	.banner-content { max-width: 80vw; }
-	
-	.masthead
-	{
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		gap: 1rem;
-		background-color: var(--dark-green);
-		color: var(--white);
-		padding: 1rem 2rem;
-		box-sizing: border-box;
-	}
-	
-	.masthead > div
-	{
-		flex: 0 1 auto;
-		min-width: 200px;
-	}
-	
-	.stats
-	{
-		display: grid;
-		background-color: #fff;
-		max-width: 100%;
-	}
-	
-	.stats-grid
-	{
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		justify-self: center;
-		gap: 2rem;
-		max-width: 80vw;
-		padding-top: 1rem;
-		margin-bottom: 2rem;
-	}
-	
-	.satisfaction
-	{
-		margin: 1rem auto;
-		text-align: left;
-		max-width: 60vw;
-	}
-	
-	.grads ol
-	{
-		max-width: 80vw;
-		list-style: none;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 1rem;
-		margin: 0 auto;
-	}
-	
-	.sample-work-grid-container
-	{
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, auto);
-	}
-	
-	.curriculum
-	{
-		max-width: 80vw;
-		margin: 0 auto;
-		background-color: #fff;
-		padding: 2rem 2rem;
-	}
-	
-	.curriculum div
-	{
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		margin: 0 auto;
-		gap: 1rem;
-	}
-	
-	.faculty ul.person
-	{
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-	
-	.rgd
-	{
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		justify-content: flex-end;
-		padding: 0;
-		max-width: 70vw;
-		gap: 1rem;
-	}
-	
-	.rgd-logo
-	{
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		padding: 0;
-		width: 400px;
-	}
-	
-	.rgd div svg
-	{
-		width: 100%;
-		height: auto;
-	}
-	
-	nav ul
-	{
-		display: grid;
-		grid-template-columns: repeat(3, auto);
-		gap: .5rem;
-	}
-	
-	footer ul.social, footer ul.resources
-	{
-		display: grid;
-		grid-template-columns: repeat(5, auto);
-		justify-content: space-between;
-	}
-	
-	.intro, .highlights, .employer, .fieldwork-form
-	{
-		max-width: 80vw;
-		margin: 0rem 2rem;
-		padding: 0;
-	}
+	nav ul { grid-template-columns: repeat(3, 1fr); }
 }

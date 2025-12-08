@@ -143,6 +143,7 @@ h1
 {
 	font-size: clamp(2rem, 6vw, 4rem);
 	line-height: 1;
+	margin-top: 0;
 }
 
 .banner h2
@@ -161,6 +162,7 @@ h2 {
     margin: 0;
 }
 
+footer { color: white; }
 .curriculum h2, .interested h2, footer h2, .grads h2, .sample-work h2, .fieldwork h2 {
     text-align: center;
     margin: 1rem auto;
@@ -250,6 +252,7 @@ strong, bold, .bold
 
 .italic { font-style: italic; }
 
+.masthead { color: white; }
 .masthead a
 {
 	color: white;
@@ -326,7 +329,7 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 .highlights ul li
 {
 	position: relative;
-	padding-left: 1.4rem;
+	padding-left: 1.15rem;
 	text-indent: 0;
 }
 
@@ -544,13 +547,12 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 	text-decoration: none;
 	border-bottom: 2px solid var(--teal);
 }
+.portfolio-reqs-text { max-width: 60ch; }
 
 .portfolio-reqs a:hover { border-bottom: 2px solid lightgrey; }
 
 .interested {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+text-align: center;
     
 }
 

@@ -7,8 +7,8 @@ description: "Inquire about hiring one of our fantastic, highly skilled & motiva
 	<li><a href="#form">Jump to Form</a></li>
 </ul>
 
-{% include masthead.html %}
-{% include banner.html %} 
+{% include 01-masthead.html %}
+{% include 02-banner.html %} 
 <main role="main" class="jobs-main">
 	<h3>
 		Hire a Designer 
@@ -158,4 +158,4 @@ description: "Inquire about hiring one of our fantastic, highly skilled & motiva
 		</div>
 		</form>
 </main>
-{% include footer.html %}
+{% include 13-footer.html %}

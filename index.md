@@ -14,25 +14,21 @@ title: Home
 	<li><a href="#footer">Jump to Hire a Designer</a></li>
 </ul>
 
-{% include masthead.html %}
+{% include 01-masthead.html %}
 
 <main role="main" class="main-home">
-{% include banner.html %}
-{% include news.html %}
-<hr>
-{% include stats.html %}
-{% include fieldwork.html %}
-{% include grads.html %}
-{% include sample-work.html %}
-{% include curriculum.html %}
-{% include faculty.html %}
-{% include rgd.html %}
-{% include portfolio-reqs.html %}
-{% include interested.html %}
+{% include 02-banner.html %}
+{% include 03-news.html %}
 
-{% if false %}
-{% include video.html %}
-{% endif %}
+{% include 04-stats.html %}
+{% include 05-fieldwork.html %}
+{% include 06-grads.html %}
+{% include 07-sample-work.html %}
+{% include 08-curriculum.html %}
+{% include 09-faculty.html %}
+{% include 10-rgd.html %}
+{% include 11-portfolio-reqs.html %}
+{% include 12-interested.html %}
 </main>
 
-{% include footer.html %}
+{% include 13-footer.html %}
