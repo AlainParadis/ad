@@ -1,24 +1,17 @@
 :root
 {
-	--serif: 'Merriweather', serif;
-	--sans: 'Open Sans', sans-serif;
 	--background-color: var(--white);
-	--white: rgb(255, 255, 255);
-	--grey: rgb(100, 102, 106);
 	--black: rgb(0, 0, 0);
-	--orange: rgb(224, 173, 59);
-	--text-color: rgb(0, 0, 0);
-	--dark-green: rgb(43, 101, 65);
 	--dark-green-50: rgb(125, 167, 141);
+	--dark-green: rgb(43, 101, 65);
+	--grey: rgb(100, 102, 106);
 	--lime-green: rgb(149, 200, 70);
+	--orange: rgb(224, 173, 59);
+	--sans: 'Open Sans', sans-serif;
+	--serif: 'Merriweather', serif;
 	--teal: rgb(67, 152, 164);
-}
-
-*, *::before, *::after
-{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+	--text-color: rgb(0, 0, 0);
+	--white: rgb(255, 255, 255);
 }
 
 html
@@ -157,7 +150,7 @@ h1
 }
 
 h2 {
-    color: var(--dark-green);
+    color: var(--text-color);
     font-size: clamp(1rem, 4vw, 2rem);
     margin: 0;
 }
@@ -177,7 +170,7 @@ footer { color: white; }
 }
 
 h3 {
-    color: var(--dark-green);
+    color: var(--text-color);
     font-size: clamp(.85rem, 4vw, 1.5rem);
     margin-top: 0;
     padding-top: 0;
