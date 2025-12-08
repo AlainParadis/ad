@@ -1,14 +1,17 @@
 :root
 {
-	--white: rgb(255, 255, 255);
-	--grey: rgb(100, 102, 106);
+	--background-color: var(--white);
 	--black: rgb(0, 0, 0);
-	--orange: rgb(224, 173, 59);
-	--text-color: rgb(0, 0, 0);
-	--dark-green: rgb(43, 101, 65);
 	--dark-green-50: rgb(125, 167, 141);
+	--dark-green: rgb(43, 101, 65);
+	--grey: rgb(100, 102, 106);
 	--lime-green: rgb(149, 200, 70);
+	--orange: rgb(224, 173, 59);
+	--sans: 'Open Sans', sans-serif;
+	--serif: 'Merriweather', serif;
 	--teal: rgb(67, 152, 164);
+	--text-color: rgb(0, 0, 0);
+	--white: rgb(255, 255, 255);
 }
 
 html
@@ -20,7 +23,12 @@ html
 	box-sizing: border-box;
 }
 
-*, *::before, *::after { box-sizing: inherit; }
+*, *::before, *::after
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 body
 {
