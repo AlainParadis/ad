@@ -455,26 +455,17 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 
 .faculty ul { list-style: none; }
 .faculty ul.person p { margin: 0; }
-
 .faculty ul.person-links
 {
 	display: flex;
 	margin-top: 1rem;
 }
 
-.faculty ul.person p:first-child
-{
-	font-family: var(--sans);
-	font-weight: bold;
-	font-size: 1.25rem;
-	margin-bottom: 0;
-}
-
 .faculty ul.person p:nth-child(2)
 {
 	font-family: var(--serif);
-	font-weight: bold;
 	font-style: italic;
+	font-weight: 600;
 	margin-bottom: 1rem;
 }
 
