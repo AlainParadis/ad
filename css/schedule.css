@@ -8,9 +8,10 @@ body
   padding: 0;
 }
 .schedule-table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
   font-size: 0.9rem;
+  margin: 0 auto 0 auto;
 }
 
 .schedule-table th,
