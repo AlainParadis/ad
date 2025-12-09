@@ -10,11 +10,13 @@ html
 	font-weight: 400;
 	line-height: 1.5;
 	color: var(--text-color);
+/* 
 	hyphens: auto;
 	hyphenate-limit-chars: 6 3 3;
 	hyphenate-limit-lines: 2;
 	hyphenate-limit-last: always;
 	hyphenate-limit-zone: 8%;
+ */
 }
 
 p { margin-bottom: 2.0rem; }
