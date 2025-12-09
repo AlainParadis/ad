@@ -95,7 +95,7 @@ button[type="submit"]
 
 button[type="submit"]:hover { background: var(--lime-green); }
 
-@media (min-width: 900px)
+@media (min-width: 768px)
 {
 	textarea, select, input[type="text"], input[type="email"], input[type="telephone"] { width: 70%; }
 }
