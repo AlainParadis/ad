@@ -93,7 +93,7 @@ description: "See what’s needed and how to excel when applying to the Algonqui
 		<hr> 
 	</section>
 	<section class="wrapper gutter-1-4 pad-t push-2">
-		<h2 class="yotta color-green-dark pad-t-1-2" id="submission">
+		<h2 id="submission">
 			Submission 
 		</h2>
 		<h3>
