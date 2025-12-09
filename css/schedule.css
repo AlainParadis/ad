@@ -28,40 +28,38 @@ body
 
 /* Level-based colours */
 .level-2 {
-  background: #e6f2ff; /* light blue */
+  background: #e6f2ff;
 }
 
 .level-4 {
-  background: #e8ffe6; /* light green */
+  background: #e8ffe6;
 }
 
 .level-6 {
-  background: #ffe6f2; /* light pink */
+  background: #ffe6f2;
 }
 
-/* Async row style (if you decide to include ASYNC) */
 .level-async {
   background: #fdf2d6;
 }
 
 .schedule-nav {
-  text-align: center;          /* optional: center the whole nav */
+  text-align: center;
   margin: 1rem 0;
 }
 
 .schedule-nav ul {
-  list-style: none;            /* remove default bullets */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .schedule-nav li {
-  display: inline-block;       /* horizontal items */
+  display: inline-block;
   margin: 0 0.25rem;
   font-size: 0.95rem;
 }
 
-/* bullet separator between items */
 .schedule-nav li + li::before {
   content: "•";
   margin: 0 0.35rem 0 0.1rem;
@@ -80,4 +78,7 @@ body
 .schedule-nav a.is-current-day {
   font-weight: 700;
   cursor: default;
+}
+footer {
+    font-size: 0.8rem;    
 }
