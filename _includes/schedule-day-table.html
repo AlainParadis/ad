@@ -21,8 +21,9 @@
             {% assign entry = cell_classes.first %}
             {% assign level_class = entry.Level | downcase | replace: " ", "-" %}
             <td class="level-{{ level_class }}">
-              <strong>{{ entry.Code }}</strong><br>
-              {{ entry.Courses }}<br>
+            <strong>{{ entry.Time }}</strong><br>
+              {{ entry.Code }}<br>
+              <strong>{{ entry.Courses }}</strong><br>
               Sec {{ entry.Section }} – Level {{ entry.Level }}<br>
               <a href="mailto:{{ entry.Email }}">{{ entry.Instructor }}</a>
             </td>
