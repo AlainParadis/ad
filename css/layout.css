@@ -44,11 +44,19 @@ body
 {
 	background-color: var(--dark-green);
 	width: 100%;
+	margin: 0;
+	padding: 1rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+.masthead-content
+{
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	gap: 1.5rem;
-	margin: 0;
-	padding: 1rem 2rem;
+	max-width: 90%;
 }
 
 .logo-algonquindesign
@@ -73,7 +81,7 @@ body
 
 .banner-content
 {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto 0 auto;
 }
 
@@ -117,7 +125,7 @@ body
 .satisfaction
 {
 	display: block;
-	max-width: 60%;
+	max-width: 90%;
 }
 
 .fieldwork
@@ -356,19 +364,18 @@ body
 .portfolio-reqs-pieces
 {
 	list-style: none;
-	margin: 0;
 	padding: 0;
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 1rem;
-    width: 100%;
-    margin: 0 auto;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .portfolio-reqs-pieces li
 {
 	position: relative;
-  	justify-items: center;
+	justify-items: center;
 }
 
 .portfolio-reqs-pieces li img
@@ -377,7 +384,7 @@ body
 	height: auto;
 	display: block;
 	object-fit: cover;
-  	border: solid 1px #C0C0C0;
+	border: solid 1px #C0C0C0;
 }
 
 .interested
@@ -486,12 +493,33 @@ footer ul.social li { }
 	text-align: center;
 }
 
-@media (min-width: 768px)
+@media (min-width: 576px)
 {
-	.masthead
+	.masthead { flex-direction: row; }
+	
+	.masthead-content
 	{
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		max-width: 90%;
+	}
+	
+	.grads ol { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px)
+{
+	.banner-content
+	{
+		width: 90%;
+		margin: 0 auto 0 auto;
+	}
+	
+	.satisfaction
+	{
+		display: block;
+		max-width: 70%;
 	}
 	
 	.grads ol { grid-template-columns: repeat(4, 1fr); }
@@ -548,6 +576,7 @@ footer ul.social li { }
 		flex: 1 1 auto;
 		text-align: left;
 	}
+	
 	/* Grid of portfolio pieces on requirements page */
 	.portfolio-reqs-pieces
 	{
@@ -567,6 +596,7 @@ footer ul.social li { }
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(3, auto);
 	}
+	
 	/* Grid of portfolio pieces on requirements page */
 	.portfolio-reqs-pieces
 	{
