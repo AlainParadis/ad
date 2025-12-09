@@ -154,10 +154,9 @@ body
 	padding: 1rem 2rem;
 }
 
-
 .grads article
 {
-   	width: 60vw;
+	width: 65vw;
 	padding: 1rem;
 	background-color: white;
 	border-radius: 10px;
@@ -353,6 +352,34 @@ body
 
 .portfolio-reqs-logo .svg { }
 
+/* Grid of portfolio pieces on requirements page */
+.portfolio-reqs-pieces
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.portfolio-reqs-pieces li
+{
+	position: relative;
+  	justify-items: center;
+}
+
+.portfolio-reqs-pieces li img
+{
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+  	border: solid 1px #C0C0C0;
+}
+
 .interested
 {
 	background-color: var(--orange);
@@ -421,7 +448,7 @@ footer ul.social li { }
 	margin-top: 1rem;
 }
 
-.main-jobs, .main-fieldwork, main-thanks
+.main-jobs, .main-fieldwork, .main-thanks, .main-portfolio-reqs-page
 {
 	width: 90%;
 	margin: 0 auto 0 auto;
@@ -435,6 +462,7 @@ footer ul.social li { }
 	justify-content: center;
 	gap: 1.5rem;
 	padding: 1rem;
+	margin-bottom: 1rem;
 	border: solid 1px #D6D6D6;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
@@ -458,7 +486,7 @@ footer ul.social li { }
 	text-align: center;
 }
 
-@media (min-width: 800px)
+@media (min-width: 768px)
 {
 	.masthead
 	{
@@ -466,7 +494,7 @@ footer ul.social li { }
 		justify-content: space-between;
 	}
 	
-	.grads ol { grid-template-columns: repeat(2, 1fr); }
+	.grads ol { grid-template-columns: repeat(4, 1fr); }
 	
 	.sample-work-grid-container
 	{
@@ -520,6 +548,13 @@ footer ul.social li { }
 		flex: 1 1 auto;
 		text-align: left;
 	}
+	/* Grid of portfolio pieces on requirements page */
+	.portfolio-reqs-pieces
+	{
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 90vw;
+		margin-inline: auto;
+	}
 }
 
 @media (min-width: 1280px)
@@ -531,6 +566,12 @@ footer ul.social li { }
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(3, auto);
+	}
+	/* Grid of portfolio pieces on requirements page */
+	.portfolio-reqs-pieces
+	{
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 90vw;
 	}
 	
 	.curriculum div { grid-template-columns: repeat(3, 1fr); }

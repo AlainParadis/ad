@@ -6,7 +6,7 @@ description: "See what’s needed and how to excel when applying to the Algonqui
 ---
 {% include 01-masthead.html %}
 {% include 02-banner.html %}
-<main role="main" class="portfolio-reqs">
+<main role="main" class="main-portfolio-reqs-page">
 	<h2>
 		Why a portfolio? 
 	</h2>
@@ -33,7 +33,7 @@ description: "See what’s needed and how to excel when applying to the Algonqui
 		<p>
 			For your portfolio submission, you will design (or redesign) a logo for one of three businesses: a sports team, a restaurant, or a flower shop. To start, research existing logos for the business you choose to gain insight into industry trends and best practices. Next, develop a minimum of 15 logo sketches, exploring different concepts and ideas. Refine your sketches to create a final logo design that effectively represents the business. In addition to the final design, include a logo application to demonstrate how the logo would be used in a real-world context. You may choose to complete this work entirely by hand or use a combination of hand-drawn and computer-aided design techniques. Regardless of the method, ensure that your submission showcases a clear and well-documented design process. 
 		</p>
-		<ul class="">
+		<ul class="portfolio-reqs-pieces">
 			<li><img src="/images/logo-design/logo-example-A1.jpg" alt="Original logo and sketch ideas for new 613flea logo design" /></li>
 			<li><img src="/images/logo-design/logo-example-A2.jpg" alt="Font and colour selection, logo explanation and new logo design for 613flea" /></li>
 		</ul>
@@ -52,7 +52,7 @@ description: "See what’s needed and how to excel when applying to the Algonqui
 		<p>
 			You may choose to complete this work entirely by hand or use a combination of hand-drawn and computer-aided design techniques. Regardless of the method, ensure that your submission showcases a clear and well-documented design process. By following these guidelines, you will demonstrate your understanding of event poster design principles and your ability to apply them in a practical context. 
 		</p>
-		<ul class="">
+		<ul class="portfolio-reqs-pieces">
 			<li><img src="/images/poster/poster-example-B1.jpg" alt="Image displaying objective, slogans and sample ideas for poster design" /></li>
 			<li><img src="/images/poster/poster-example-B2.jpg" alt="Image displaying sketch ideas and notes for poster design" /></li>
 			<li><img src="/images/poster/poster-example-B3.jpg" alt="Final Boogie Wonderland poster design" /></li>
@@ -66,7 +66,7 @@ description: "See what’s needed and how to excel when applying to the Algonqui
 		<p>
 			<strong>Note:</strong> If you have examples of photography, illustration, or paintings, ensure these elements are combined into graphically designed pieces with type in order to be assessed on your fit for this program. 
 		</p>
-		<ul class="">
+		<ul class="portfolio-reqs-pieces">
 			<li><img src="/images/portfolio-pieces/water-colour-study-2.jpeg" alt="Water colour study of a woman" /></li>
 			<li><img src="/images/portfolio-pieces/water-colour-study.jpeg" alt="Water colour study of takeout food" /></li>
 			<li><img src="/images/portfolio-pieces/poster-design.jpeg" alt="Poster design for Ces filles-la" /></li>
