@@ -150,11 +150,6 @@ footer { color: white; }
     color: white;
 }
 
-.curriculum h3 {
-    margin-bottom: 0.5rem;
-    font-size: clamp(.85rem, 4vw, 1.25rem);
-}
-
 p + p { margin-bottom: 1rem; }
 ul + p { margin-top: 2rem; }
 
@@ -429,32 +424,6 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 
 .faculty a:hover { border-bottom: 2px solid lightgrey; }
 
-.faculty ul
-{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
-	max-width: 90vw;
-	margin: 0 auto;
-	gap: 2rem;
-}
-
-.faculty ul.person { margin-bottom: 1rem; }
-
-.faculty ul.person > li
-{
-	background-color: white;
-	border-radius: 8px;
-	padding: .5rem;
-}
-
-.faculty ul { list-style: none; }
-.faculty ul.person p { margin: 0; }
-.faculty ul.person-links
-{
-	display: flex;
-	margin-top: 1rem;
-}
-
 .faculty ul.person p:nth-child(2)
 {
 	font-family: var(--serif);
@@ -464,6 +433,8 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 }
 
 .rgd div:nth-child(2) { max-width: 60ch; }
+
+.rgd-text h3 { margin-top: 0; }
 
 .rgd a
 {
