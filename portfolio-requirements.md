@@ -100,7 +100,7 @@ description: "See what’s needed and how to excel when applying to the Algonqui
 			Submitting Your Portfolio 
 		</h3>
 		<p>
-			To ensure that your portfolio is considered for admission to the Graphic Design Program, please follow these guidelines carefully. Your submission must be a single PDF file, labeled as "Lastname,Firstname,Portfolio". This file should be emailed to <a href="mailto:design@algonquincollege.com?subject=Graphic%20Design%20Portfolio&amp;body=Name:%20%0D%0AEmail:%20%0D%0ATel:%20%0D%0AStudent%20Number:%20%0D%0A">design@algonquincollege.com</a>. It must include your name, email address, telephone number, and student number. If your PDF file exceeds 10MB, please use a cloud service such as Google Drive, iCloud, or Dropbox to send us a link to the file. Please note that submissions that do not adhere to this format will not be considered. 
+			To ensure that your portfolio is considered for admission to the Graphic Design Program, please follow these guidelines carefully. Your submission must be a single PDF file, labeled as "Lastname,Firstname, Portfolio". This file should be emailed to <a href="mailto:design@algonquincollege.com?subject=Graphic%20Design%20Portfolio&amp;body=Name:%20%0D%0AEmail:%20%0D%0ATel:%20%0D%0AStudent%20Number:%20%0D%0A">design@algonquincollege.com</a>. It must include your name, email address, telephone number, and student number. If your PDF file exceeds 10MB, please use a cloud service such as Google Drive, iCloud, or Dropbox to send us a link to the file. Please note that submissions that do not adhere to this format will not be considered. 
 		</p>
 		<h3>
 			Written Response 
@@ -118,7 +118,7 @@ description: "See what’s needed and how to excel when applying to the Algonqui
 	<hr>
 	<section class="portfolio-reqs-questions">
 		<h2>
-			<span tabindex="0">Questions or concerns?</span> 
+			<span>Questions or concerns?</span> 
 		</h2>
 		<p class="">
 			If you have any questions or concerns, please contact one of the Graphic Design coordinators: 

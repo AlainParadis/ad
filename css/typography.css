@@ -428,7 +428,7 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 }
 
 .rgd div:nth-child(2) { max-width: 60ch; }
-.rgd-text h3, .portfolio-reqs-text h3 { margin-top: 0; }
+.rgd-text h3, .portfolio-reqs-text h3, .content-box .text-box h3 { margin-top: 0; }
 
 .rgd a
 {

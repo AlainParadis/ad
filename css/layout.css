@@ -457,6 +457,18 @@ body
 	border: solid 1px #C0C0C0;
 }
 
+.portfolio-reqs-questions { }
+
+.portfolio-reqs-questions ul
+{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	gap: 2rem;
+}
+
+.portfolio-reqs-questions ul li { display: inline-block; }
+
 .interested
 {
 	background-color: var(--orange);
@@ -528,7 +540,7 @@ footer ul.social li { }
 .main-jobs, .main-fieldwork, .main-thanks, .main-portfolio-reqs-page
 {
 	width: 90%;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 1rem auto;
 }
 
 .content-box
@@ -536,7 +548,7 @@ footer ul.social li { }
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 	gap: 1.5rem;
 	padding: 1rem;
 	margin-bottom: 1rem;
@@ -544,21 +556,26 @@ footer ul.social li { }
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-.graphic-box
+.content-box .graphic-box
 {
-	max-width: 260px;
-	width: 100%;
+    display: flex;
+	width: 25%;
+	object-position: center;
 }
 
-.graphic-box svg
+.content-box .graphic-box svg
 {
 	display: block;
-	width: 100%;
 	height: auto;
+	object-fit: cover;
 }
 
-.text-box
+.content-box .text-box
 {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 	max-width: 40rem;
 	text-align: center;
 }
@@ -587,6 +604,38 @@ footer ul.social li { }
 	.curriculum div { grid-template-columns: repeat(2, 1fr); }
 	.faculty ul.person { grid-template-columns: repeat(2, 1fr); }
 	nav ul { grid-template-columns: 1fr 1fr; }
+	
+	.content-box
+	{
+		flex-direction: row;
+		align-items: flex-start;
+		text-align: left;
+	}
+	
+.content-box .graphic-box
+{
+    display: flex;
+	width: 25%;
+	object-position: center;
+}
+
+.content-box .graphic-box svg
+{
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.content-box .text-box
+{
+    display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	max-width: 40rem;
+	text-align: left;
+}
 }
 
 @media (min-width: 768px)
@@ -662,27 +711,18 @@ footer ul.social li { }
 	footer ul.social, footer ul.resources { justify-content: space-between; }
 	nav ul { grid-template-columns: repeat(3, 1fr); }
 	
-	.content-box
-	{
-		flex-direction: row;
-		align-items: flex-start;
-		text-align: left;
-	}
-	
-	.graphic-box { flex: 0 0 auto; }
-	
-	.text-box
-	{
-		flex: 1 1 auto;
-		text-align: left;
-	}
-	
 	/* Grid of portfolio pieces on requirements page */
 	.portfolio-reqs-pieces
 	{
 		grid-template-columns: repeat(2, 1fr);
 		max-width: 90vw;
 		margin-inline: auto;
+	}
+	
+	.portfolio-reqs-questions ul
+	{
+		display: flex;
+		flex-direction: row;
 	}
 }
 
