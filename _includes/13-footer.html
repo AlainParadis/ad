@@ -1,4 +1,4 @@
-<footer name="footer" class="footer">
+<footer name="footer" id="footer" class="footer">
 	<div class="footer-content">
 		{% unless page.url contains 'jobs' %} 
 		<h2>
@@ -7,7 +7,7 @@
 		<p>
 			Interested in hiring one of our talented students? You’ll get loads of creativity, innovative solutions—and affordable rates. 
 		</p>
-		<a href="/jobs/" class="btn btn-orange">Hire a Designer</a> {% endunless %} 
+		<a href="{{ '/jobs/' | relative_url }}" class="btn btn-orange">Hire a Designer</a> {% endunless %} 
 		<nav role="navigation">
 			<h2 class="hidden">
 				Sitemap 
