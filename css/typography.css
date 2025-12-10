@@ -580,12 +580,14 @@ a.btn-dark-green
 {
 	background-color: var(--dark-green);
 	color: white;
+	border: 0;
 }
 
 a.btn-dark-green:hover
 {
 	background-color: var(--lime-green);
 	color: white;
+	border: 0;
 }
 
 .portfolio-reqs a.btn { border: 0; }
