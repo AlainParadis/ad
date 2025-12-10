@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6
 {
 	font-family: var(--sans);
 	font-style: normal;
-	letter-spacing: -0.05rem;
+	letter-spacing: -0.02rem;
 	font-weight: 600;
 	margin-top: 1rem;
 	margin-bottom: 0;
