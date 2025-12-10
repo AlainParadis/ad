@@ -1,6 +1,4 @@
-:root
-{
-}
+:root { }
 
 html
 {
@@ -10,7 +8,7 @@ html
 	font-weight: 400;
 	line-height: 1.5;
 	color: var(--text-color);
-/* 
+	/* 
 	hyphens: auto;
 	hyphenate-limit-chars: 6 3 3;
 	hyphenate-limit-lines: 2;
@@ -69,8 +67,9 @@ a
 
 a:hover,
 a:focus,
-a:active {
-    color: var(--orange);
+a:active
+{
+	color: var(--orange);
 	border-bottom: 2px solid var(--orange);
 }
 
@@ -83,7 +82,6 @@ blockquote
 }
 
 /* * * * * * HEADINGS * * * * *  */
-
 h1, h2, h3, h4, h5, h6
 {
 	font-family: var(--sans);
@@ -141,38 +139,39 @@ h1
 
 footer { color: white; }
 
-.curriculum h2, .interested h2, footer h2, .grads h2, .sample-work h2, .fieldwork h2 {
-    text-align: center;
-    margin: 1rem auto;
+.curriculum h2, .interested h2, footer h2, .grads h2, .sample-work h2, .fieldwork h2
+{
+	text-align: center;
+	margin: 1rem auto;
 }
 
-.sample-work h2, footer h2 {
-    color: white;
-}
-
+.sample-work h2, footer h2 { color: white; }
 p + p { margin-bottom: 1rem; }
 ul + p { margin-top: 2rem; }
 
-.hanging-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.hanging-list
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.hanging-list li {
-  position: relative;
-  padding-left: 1rem;
-  text-indent: 1rem;
+.hanging-list li
+{
+	position: relative;
+	padding-left: 1rem;
+	text-indent: 1rem;
 }
 
-.hanging-list li::before {
-  content: "•";
-  color: var(--dark-green);
-  position: absolute;
-  left: 0;
-  top: 0.25em;
-  font-size: 1em;
-  line-height: 1;
+.hanging-list li::before
+{
+	content: "•";
+	color: var(--dark-green);
+	position: absolute;
+	left: 0;
+	top: 0.25em;
+	font-size: 1em;
+	line-height: 1;
 }
 
 hr
@@ -212,8 +211,8 @@ strong, bold, .bold
 }
 
 .italic { font-style: italic; }
-
 .masthead { color: white; }
+
 .masthead a
 {
 	color: white;
@@ -223,11 +222,7 @@ strong, bold, .bold
 
 .masthead-link { border-bottom: 2px solid var(--lime-green); }
 a.masthead-link:hover { border-bottom: 2px solid white; }
-
-.banner div
-{
-	margin-bottom: 0.5rem;
-}
+.banner div { margin-bottom: 0.5rem; }
 
 .news h2
 {
@@ -433,8 +428,7 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 }
 
 .rgd div:nth-child(2) { max-width: 60ch; }
-
-.rgd-text h3 { margin-top: 0; }
+.rgd-text h3, .portfolio-reqs-text h3 { margin-top: 0; }
 
 .rgd a
 {
@@ -451,15 +445,10 @@ a.masthead-link:hover { border-bottom: 2px solid white; }
 	text-decoration: none;
 	border-bottom: 2px solid var(--teal);
 }
+
 .portfolio-reqs-text { max-width: 60ch; }
-
 .portfolio-reqs a:hover { border-bottom: 2px solid lightgrey; }
-
-.interested {
-text-align: center;
-    
-}
-
+.interested { text-align: center; }
 .interested p { color: white; }
 
 .interested a
@@ -509,7 +498,8 @@ footer a:hover { border-bottom: solid 2px white; }
 
 .footer-copyright { font-size: 0.85rem; }
 
-.logo-algonquindesign {
+.logo-algonquindesign
+{
 	width: 100%;
 	min-width: 100px;
 	max-width: 175px;
@@ -530,7 +520,7 @@ footer a:hover { border-bottom: solid 2px white; }
 	font-weight: bold;
 	text-decoration: none;
 	padding: 0.75rem 2rem;
-	margin: 2rem auto;
+	margin: 1rem auto;
 	text-align: center;
 	border: 0;
 	border-radius: 9999px;
