@@ -64,13 +64,13 @@ select
 }
 
 .form-row {
-  display: flex;             /* yes + no on one line */
-  gap: 1.5rem;               /* space between the two options */
+  display: flex;
+  gap: 1.5rem;
 }
 
 .radio-option {
-  display: inline-flex;      /* radio + text on one line */
-  align-items: center;       /* vertical alignment */
+  display: inline-flex;
+  align-items: center;
   cursor: pointer;
 }
 
