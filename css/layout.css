@@ -260,6 +260,15 @@ body
 	border: solid 1px black;
 }
 
+.sample-work .video
+{
+	padding: 25%;
+	position: relative;
+	width: 90vw;
+	margin: 0 auto;
+	filter: drop-shadow(0px 0px 5px black);
+}
+
 .curriculum
 {
 	background-color: var(--white);
